@@ -7,23 +7,61 @@
   display -ms-flexbox
   display -webkit-flex
   display flex
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
+  -webkit-flex-flow: row wrap
+  justify-content: space-between //space-around;
 
-.header_logo, header_organizationAndName, header_buttons
-  background #ffffff
-  padding 5px
-  width 200px
-  height 150px
-  margin-top 10px
-  line-height 150px
-  color white
-  font-weight bold
-  font-size 3em
-  text-align center
+//.header_logo, .header_organizationAndName, .header_buttons
+//  background #ffffff
+//  //padding 5px
+//  //width 200px
+//  height 100px
+//  margin-top 10px
+//  line-height 150px
+.headerLeft
+  height 90px
+
+.header_logo
+  display inline-block
+
+.header_organizationAndName
+  display inline-block
+  .header_organization
+    h3
+      margin 0
+  .header_name
+    h2
+      margin 0
+
+//.header_logo
+//  align-self flex-start
+//
+//.header_organizationAndName
+//  align-self flex-start
+
+//.header_organization
+//  font-weight bold
+//  //font-size 3em
+//  text-align left
+//
+//.header_name
+//  font-weight bold
+//  //font-size 3em
+//  text-align left
+
+//.header.buttonEntrance
+//  p
+//    text-align right
+//
+//.header.buttonRegistration
+//  p
+//    text-align right
+
+.header_buttons
+  //align-content flex-end
+  justify-content flex-end
 
 img
-  height 90px
+  height auto
 
 .navigation
   list-style none
@@ -35,13 +73,19 @@ img
   display -webkit-flex
   display flex
   -webkit-flex-flow row wrap
-  justify-content flex-end
+  justify-content center //flex-end
 
-.navigation a
-  text-decoration none
-  display block
-  padding 1em
-  color white
+//.navigation.navigation_item
+//  display inline
+//.navigation a
+.navigation_items
+  padding 10 10
+.navigation.navigation_item
+  a
+    text-decoration none
+    display block
+    color white
+    text-align center
 
 .navigation a:hover
   background darken(deepskyblue, 2%)
