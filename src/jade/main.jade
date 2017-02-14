@@ -1,34 +1,43 @@
-doctype html
-html(lang='en')
-    head
-        meta(charset="utf-8")
-        meta(http-equiv="X-UA-Compatible" content="IE=edge")
-        meta(name="viewport" content="width=device-width, initial-scale=1")
-        block head
-        link(rel="stylesheet" href="../css/styles.css" type="text/css")
+extends ./templates/base_template.jade
+block content
+    div.content
+        div.content_blckEntrance
+            div.blockEnrance_WrapperContent
+                div.blockEnrance_content
+                    div.blockEnrance_enterLogin
 
-    body
-        header.header
-            div.header_logo
-                img(src="../images/gerb_spb.jpg")
-            div.header_organizationAndName
-                div.header_organization
-                    h3 Комитет по промышленной политике и инновациям Санкт-Петербурга
-                div.header_name
-                    h2 Интерактивная карта промышленных зон города Санкт-Петербурга
+                    div.blockEnrance_enterPassword
 
-            div.header_buttons
-                div.header.buttonEntrance
-                    p Вход
-                div.header.buttonRegistration
-                    p Регистрация
+                    div.blockEnrance_forgetPassword
 
-        - var navNames = ['Главная', 'О нас', 'Новости', 'Контакты']
+                    div.blockEnrance_buttonEntrance
 
-        nav.navigation
-            for name in navNames
-                div.navigation_itemsWrapper
-                    ul.navigation_items
-                        li.navigation.navigation_item
-                            a(href= name + '.html')= name
-                                //p name
+        div.content_blockRegistration
+            div.blockRegistration_header
+                div.blockRegistration_name
+
+                div.blockRegistration_buttonCancel
+
+            div.blockRegistration_wrapperContent
+                div.blockRegistration_content
+                    div.blockRegistration_whoAreYou
+
+                        div.blockRegistration_person
+
+                            div.blockRegistration_enterYourName
+
+                            div.blockRegistration_document
+
+                            div.blockRegistration_documentData
+
+                        div.blockRegistration_legalEntity
+
+                            div.blockRegistration_organizationInformation
+
+                        div.blockRegistration_stateExecuter
+
+                            div.blockRegistration_staterExecutereInformation
+
+                        div.blockRegistration_email
+
+                        div.blockRegistration_buttonSend
