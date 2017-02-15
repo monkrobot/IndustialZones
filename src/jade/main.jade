@@ -14,18 +14,35 @@ block content
 
         div.content_blockRegistration
             div.blockRegistration_header
-                div.blockRegistration_name
-
                 div.blockRegistration_buttonCancel
+
+                div.blockRegistration_name
+                    p Регистрация
 
             div.blockRegistration_wrapperContent
                 div.blockRegistration_content
                     div.blockRegistration_whoAreYou
+                        div.blockRegistration_form
+                            form(name="registration" method="post" action="registration.php")
+                                input(type="radio" name="whoAreYou" value="person")
+                                = 'Физическое лицо'
+                                input(type="radio" name="whoAreYou" value="person")
+                                = 'Юридическое лицо'
+                                input(type="radio" name="whoAreYou" value="person")
+                                = 'ИОГВ'
 
                         div.blockRegistration_person
 
                             div.blockRegistration_enterYourName
-
+                                div.blockRegistration_Surname
+                                    p Фамилия
+                                    input(type="text")
+                                div.blockRegistration__Name
+                                    p Имя
+                                    input(type="text")
+                                div.blockRegistration_patronymic
+                                    p Отчество
+                                    input(type="text")
                             div.blockRegistration_document
 
                             div.blockRegistration_documentData
