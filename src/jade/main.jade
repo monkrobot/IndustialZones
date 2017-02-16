@@ -1,6 +1,6 @@
 extends ./templates/base_template.jade
 block content
-    div.content
+    div.contentMain
         div.content_blckEntrance
             div.blockEnrance_WrapperContent
                 div.blockEnrance_content
@@ -12,7 +12,7 @@ block content
 
                     div.blockEnrance_buttonEntrance
 
-        div.content_blockRegistration
+        div.content_blockRegistration.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
             div.blockRegistration_header
                 div.blockRegistration_buttonCancel
 
@@ -26,15 +26,15 @@ block content
                             form(name="registration" method="post" action="registration.php")
                                 input(type="radio" name="whoAreYou" value="person")
                                 = 'Физическое лицо'
-                                input(type="radio" name="whoAreYou" value="person")
+                                input(type="radio" name="whoAreYou" value="legalEntity")
                                 = 'Юридическое лицо'
-                                input(type="radio" name="whoAreYou" value="person")
+                                input(type="radio" name="whoAreYou" value="stateExecuter")
                                 = 'ИОГВ'
 
-                        div.blockRegistration_person
+                        div.blockRegistration_person.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
 
                             div.blockRegistration_enterYourName
-                                div.blockRegistration_Surname
+                                div.blockRegistration_Surname.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
                                     p Фамилия
                                     input(type="text")
                                 div.blockRegistration__Name
@@ -44,17 +44,47 @@ block content
                                     p Отчество
                                     input(type="text")
                             div.blockRegistration_document
-
+                                form(name="registration" method="post" action="registration.php")
+                                    input(type="radio" name="document" value="passport")
+                                    = 'Паспортные данные'
+                                    input(type="radio" name="document" value="inn")
+                                    = 'ИНН'
                             div.blockRegistration_documentData
+                                div.blockRegistration_passport.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
+                                    div.blockRegistration_passportSeria
+                                        p Серия паспорта
+                                        input(type="text")
+                                    div.blockRegistration_passportNumber
+                                        p Номер паспорта
+                                        input(type="text")
+                                div.blockRegistration_inn.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
+                                    div.blockRegistration_innNumber
+                                        p Номер ИНН
+                                        input(type="text")
+
 
                         div.blockRegistration_legalEntity
 
                             div.blockRegistration_organizationInformation
+                                div.blockRegistration_organizationName
+                                    p Наименование
+                                    input(type="text")
 
+                                div.blockRegistration_registrationNumber
+                                    p Номер свидетельства о регистрации
+                                    input(type="text")
                         div.blockRegistration_stateExecuter
 
-                            div.blockRegistration_staterExecutereInformation
+                            div.blockRegistration_stateExecuterInformation
+                                div.blockRegistration_stateExecuterName
+                                    p Наименование ИОГВ
+                                    input(type="text")
 
-                        div.blockRegistration_email
-
+                                div.blockRegistration_stateExecuterPerformer
+                                    p Должность специалиста
+                                    input(type="text")
+                        div.blockRegistration_wrapperEmail
+                            .blockRegistration_email
+                                p Электронная почта
+                                input(type="text")
                         div.blockRegistration_buttonSend

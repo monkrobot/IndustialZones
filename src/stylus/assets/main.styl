@@ -2,7 +2,7 @@
 
 .content_blockRegistration
   width 50%
-  margin 5% auto
+  margin 0 auto
   box-shadow  0 0 7px rgba(0,0,0,0.5)
 
   .blockRegistration_header
@@ -22,13 +22,55 @@
     .blockRegistration_whoAreYou
       text-align center
 
-      //.blockRegistration_form
-      //  display flex
+      .blockRegistration_form
+        text-align left
 
     .blockRegistration_enterYourName
       display flex
-      justify-content space-around
+      justify-content left
 
       .blockRegistration_Surname, .blockRegistration__Name, .blockRegistration_patronymic
         text-align left
+        flex-basis 32%
+        margin 0 1.2%
 
+    .blockRegistration_document
+      text-align left
+      margin 3% 0 0 0
+
+    .blockRegistration_passport, .blockRegistration_inn
+      margin 0
+      display flex
+      justify-content left
+
+      .blockRegistration_passportSeria, .blockRegistration_passportNumber, .blockRegistration_innNumber
+        text-align left
+        flex-basis 32%
+        margin 0 1%
+
+.blockRegistration_organizationInformation
+  display flex
+  justify-content left
+
+  .blockRegistration_organizationName, .blockRegistration_registrationNumber
+    text-align left
+    //flex-basis 45%
+    margin 0 1.2%
+
+.blockRegistration_stateExecuterInformation
+  display flex
+  justify-content left
+
+  .blockRegistration_stateExecuterName, .blockRegistration_stateExecuterPerformer
+    text-align left
+    //flex-basis 45%
+    margin 0 1.2%
+
+.blockRegistration_wrapperEmail
+  margin 3% 0
+  display flex
+
+  .blockRegistration_email
+    text-align left
+    flex-basis 32%
+    margin 0 auto 20px 1.2%

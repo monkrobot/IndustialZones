@@ -1,3 +1,5 @@
+//console.log('Hello World')
+//
 //var classesHideElement = 'hide-element-sm hide-element-xs hide-element-lg hide-element-md';
 //
 //var hideElement = function (element){
@@ -13,37 +15,39 @@
 //    outputElement.html(content);
 //};
 //
-//
-//
-//
-//var contentPeople = function(){
-//    var idContentPeople = $('#contentPeople');
-//    var wrapperIdContentPeople = $("#wrapper-contentPeople")
+//var content_blockRegistration = function(){
+//    var contentMain = $('.contentMain');
+//    var content_blockRegistration = $(".content_blockRegistration")
 //    var body = $('body');
 //
-//    $('.itemPeople').click(function() {
+//    $('.header.buttonRegistration').click(function() {
 //        body.css("overflow", "hidden");
-//        var content = $(this).children('.contentPeople').html();
-//        idContentPeople.html(content);
-//        if(wrapperIdContentPeople.hasClass("hide-element-sm" || "hide-element-xs" || "hide-element-lg" || "hide-element-md")){
+//        var content = $(this).children('.contentMain').html();
+//        contentMain.html(content);
+//        if(content_blockRegistration.hasClass("hide-element-sm" || "hide-element-xs" || "hide-element-lg" || "hide-element-md")){
 //
-//            wrapperIdContentPeople.removeClass(classesHideElement);
+//            content_blockRegistration.removeClass(classesHideElement);
 //        }
 //    });
-//
-//    var peopleButtonClose = $('#peopleButtonClose');
-//
-//    peopleButtonClose.click(function(){
-//        hideElement(wrapperIdContentPeople);
-//        body.css("overflow", "auto");
-//    });
-//
-//    wrapperIdContentPeople.click(function (event) {
-//        if(event.target.id === 'wrapper-contentPeople'){
-//            hideElement(wrapperIdContentPeople);
-//            body.css("overflow", "auto");
-//        }
-//
-//    });
-//
 //};
+//
+////function check(){
+////    var rarr=document.getElementsByName("r");
+////    if(rarr[0].checked){
+////        //То выбран первый radio
+////    }
+////}
+//
+//var contentMain = $('.contentMain');
+//var blockRegistration_person = $(".blockRegistration_person")
+//var body = $('body');
+//
+//$('.header.buttonRegistration').click(function() {
+//    body.css("overflow", "hidden");
+//    var content = $(this).children('.contentMain').html();
+//    contentMain.html(content);
+//    if(blockRegistration_person.hasClass("hide-element-sm" || "hide-element-xs" || "hide-element-lg" || "hide-element-md")){
+//
+//        blockRegistration_person.removeClass(classesHideElement);
+//    }
+//});
