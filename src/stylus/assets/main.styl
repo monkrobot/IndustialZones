@@ -4,6 +4,7 @@
   width 50%
   margin 0 auto
   box-shadow  0 0 7px rgba(0,0,0,0.5)
+  overflow hidden
 
   .blockRegistration_header
     background-color #00bbfa
@@ -32,7 +33,10 @@
       .blockRegistration_Surname, .blockRegistration__Name, .blockRegistration_patronymic
         text-align left
         flex-basis 32%
-        margin 0 1.2%
+        margin 0 1%
+
+        input
+          width 85%
 
     .blockRegistration_document
       text-align left
@@ -48,6 +52,9 @@
         flex-basis 32%
         margin 0 1%
 
+        input
+          width 85%
+
 .blockRegistration_organizationInformation
   display flex
   justify-content left
@@ -56,6 +63,9 @@
     text-align left
     //flex-basis 45%
     margin 0 1.2%
+
+    input
+      width 85%
 
 .blockRegistration_stateExecuterInformation
   display flex
@@ -66,6 +76,9 @@
     //flex-basis 45%
     margin 0 1.2%
 
+    //input
+    //  width 85%
+
 .blockRegistration_wrapperEmail
   margin 3% 0
   display flex
@@ -74,3 +87,6 @@
     text-align left
     flex-basis 32%
     margin 0 auto 20px 1.2%
+
+    //input
+    //  width 100%
