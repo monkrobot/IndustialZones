@@ -1,0 +1,89 @@
+extends ./templates/base_template.jade
+block content
+   div.contentSecond
+      div.content_blockSearch
+         div.blockSearch_search
+            form
+               input(type="search" name="search" placeholder="")
+               input(type="submit" value="Поиск")
+
+         div.blockSearch_content
+            div.blockSearch_columnOne
+               div.blockSearch_priorityArea
+                  p Приоритетный район:
+                  //form
+                  //   input
+               div.blockSearch_square
+                  p Площадь ЗУ:
+                  div.blockSearch_quantityOfSquare
+                     p от
+                     //form
+                     //   input
+                     p до
+                     //form
+                     //   input
+                     p м.кв
+            //водоотведение
+            div.blockSearch_severage
+               p Теплоснабжение
+               div.blockSearch_quantityOfSeverage
+                  p от
+                  //form
+                  //   input
+                  p до
+                  //form
+                  //   input
+                  p м.куб./сутки
+            div.blockSearch_columnTwo
+               div.blockSearch_typeOfUse
+                  p Вид разрешенного использования:
+                  //form
+                  //   input
+               div.blockSearch_gasification
+                  p Газоснабжение:
+                  div.blockSearch_quantityOfGas
+                     p от
+                     //form
+                     //   input
+                     p до
+                     //form
+                     //   input
+                     p м.куб./сутки
+               div.blockSearch_heatSupply
+                  p Теплоснабжение
+                  div.blockSearch_quantityOfHeat
+                     p от
+                     //form
+                     //   input
+                     p до
+                     //form
+                     //   input
+                     p Гкал/час
+
+            div.blockSearch_columnThree
+               div.blockSearch_classOfDanger
+                  p Класс опасности производства:
+                  //form
+                  //   input
+               div.blockSearch_waterSupply
+                  p Водоснабжение:
+                  div.blockSearch_quantityOfWater
+                     p от
+                     //form
+                     //   input
+                     p до
+                     //form
+                     //   input
+                     p м.куб./сутки
+               div.blockSearch_electricitySupply
+                  p ТеплоснабжениеЖ
+                  div.blockSearch_quantityOfElectricity
+                     p от
+                     //form
+                     //   input
+                     p до
+                     //form
+                     //   input
+                     p кВт
+
+      div.content_blockMap

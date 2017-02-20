@@ -1,5 +1,5 @@
-//console.log('Hello World')
-//
+
+
 //var classesHideElement = 'hide-element-sm hide-element-xs hide-element-lg hide-element-md';
 //
 //var hideElement = function (element){
