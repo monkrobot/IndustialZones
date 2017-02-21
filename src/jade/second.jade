@@ -2,88 +2,113 @@ extends ./templates/base_template.jade
 block content
    div.contentSecond
       div.content_blockSearch
-         div.blockSearch_search
-            form
-               input(type="search" name="search" placeholder="")
-               input(type="submit" value="Поиск")
+         div.blockSearch_wrapperSearch
+            div.blockSearch_search
+               form
+                  input(type="search" name="search" placeholder="")
+                  //input(type="submit" value="Поиск")
+               div.blockSearch_buttonSearch
+                  p Поиск
 
          div.blockSearch_content
             div.blockSearch_columnOne
                div.blockSearch_priorityArea
                   p Приоритетный район:
+                  select
+                     option Приоритетные районы(2)
+                     option Конная Лахта
+                     option Красносельский
                   //form
                   //   input
                div.blockSearch_square
                   p Площадь ЗУ:
                   div.blockSearch_quantityOfSquare
                      p от
-                     //form
-                     //   input
+                     form
+                        input(type="text" size="3")
                      p до
-                     //form
-                     //   input
-                     p м.кв
-            //водоотведение
-            div.blockSearch_severage
-               p Теплоснабжение
-               div.blockSearch_quantityOfSeverage
-                  p от
-                  //form
-                  //   input
-                  p до
-                  //form
-                  //   input
-                  p м.куб./сутки
+                     form
+                        input(type="text" size="3")
+                     vKv
+                        p м.кв
+               //водоотведение
+               div.blockSearch_severage
+                  p Водоотведение:
+                  div.blockSearch_quantityOfSeverage
+                     p от
+                     form
+                        input(type="text" size="3")
+                     p до
+                     form
+                        input(type="text" size="3")
+                     p м.куб./сутки
             div.blockSearch_columnTwo
                div.blockSearch_typeOfUse
                   p Вид разрешенного использования:
+                  select
+                     option Выберите вид разрешенного использовани
+                     option 1
+                     option 2
                   //form
                   //   input
                div.blockSearch_gasification
                   p Газоснабжение:
                   div.blockSearch_quantityOfGas
                      p от
-                     //form
-                     //   input
+                     form
+                        input(type="text" size="3")
                      p до
-                     //form
-                     //   input
+                     form
+                        input(type="text" size="3")
                      p м.куб./сутки
                div.blockSearch_heatSupply
                   p Теплоснабжение
                   div.blockSearch_quantityOfHeat
                      p от
-                     //form
-                     //   input
+                     form
+                        input(type="text" size="3")
                      p до
-                     //form
-                     //   input
+                     form
+                        input(type="text" size="3")
                      p Гкал/час
 
             div.blockSearch_columnThree
                div.blockSearch_classOfDanger
                   p Класс опасности производства:
+                  select
+                     option Выберите класс опасности производства
+                     option 1
+                     option 2
                   //form
                   //   input
                div.blockSearch_waterSupply
                   p Водоснабжение:
                   div.blockSearch_quantityOfWater
                      p от
-                     //form
-                     //   input
+                     form
+                        input(type="text" size="3")
                      p до
-                     //form
-                     //   input
+                     form
+                        input(type="text" size="3")
                      p м.куб./сутки
                div.blockSearch_electricitySupply
-                  p ТеплоснабжениеЖ
+                  p Электроснабжение
                   div.blockSearch_quantityOfElectricity
                      p от
-                     //form
-                     //   input
+                     form
+                        input(type="text" size="3")
                      p до
-                     //form
-                     //   input
+                     form
+                        input(type="text" size="3")
                      p кВт
 
       div.content_blockMap
+      //div.content_sidebar
+         <i class="fa fa-chevron-up" aria-hidden="true"></i> //стрелка вверх
+         <i class="fa fa-chevron-down" aria-hidden="true"></i> // стрелка вниз
+         <i class="fa fa-map-marker" aria-hidden="true"></i> // маркер
+
+
+      //   <i class="fa fa-trash-o" aria-hidden="true"></i> //мусорка
+
+      //   <i class="fa fa-camera" aria-hidden="true"></i> //камера
