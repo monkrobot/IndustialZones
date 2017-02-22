@@ -1,19 +1,17 @@
-.contentSecond
-  width 100%
-  margin 0 auto
+
+.content_blockSearch
   box-shadow  0 0 7px rgba(0,0,0,0.5)
-  //overflow hidden
 
 .blockSearch_wrapperSearch
-  width 50%
+  width 40%
   padding 3% 0
   margin 0 auto
 
 .blockSearch_search
   display flex
-  justify-content center
+  //justify-content center
   //heigth 100px
-  text-align center
+  //text-align center
 
   form
     width 70%
@@ -23,9 +21,16 @@
 
   .blockSearch_buttonSearch
     width 30%
-    ///height 50%
+    padding 2% 0
     background-color #00bbfa
-    color #ffffff
+    .blockSearch_button
+      text-align center
+      height 100%
+      color #ffffff
+      cursor pointer
+
+      p
+        margin 0
 
 .blockSearch_content
   width 85%
@@ -39,9 +44,41 @@
 .blockSearch_priorityArea, .blockSearch_square, .blockSearch_severage, .blockSearch_typeOfUse, .blockSearch_gasification, .blockSearch_heatSupply, .blockSearch_classOfDanger, .blockSearch_waterSupply, .blockSearch_electricitySupply
   background-color rgba(1,1,1,0.05)
   margin 2px
-  padding 2px
+  padding 3%
 
 .blockSearch_quantityOfSquare, .blockSearch_quantityOfSeverage, .blockSearch_quantityOfGas, .blockSearch_quantityOfHeat, .blockSearch_quantityOfWater, .blockSearch_quantityOfElectricity
   p, form
     25%
     display inline-block
+
+.content_objectDescription
+  width 90%
+  margin 2% auto
+  border-bottom 2px solid #000
+
+.objectDescription_header
+  border-bottom 2px solid #000
+  padding-left 5%
+  font-size 1.5em
+  font-weight bold
+
+.objectDescription_itemHeader
+  margin-left 5%
+  font-weight bold
+
+.objectDescription_itemContent
+  margin-left 10%
+
+.objectDescription_buttons
+  width 35%
+  margin 2% auto
+
+  .objectDescription_buttonReference, .objectDescription_Editing
+    display inline-block
+    width 40%
+    margin 0 auto
+    text-align center
+    color #ffffff
+    background-color #00bbfa
+    p
+      margin 3%

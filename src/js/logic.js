@@ -1,4 +1,19 @@
 
+//$(document).ready(function(){
+//    PopUpHide();
+//});
+//function PopUpShow(){
+//    $(".content_blockRegistration").show();
+//}
+//function PopUpHide(){
+//    $(".content_blockRegistration").hide();
+//}
+//
+//$('.buttonRegistration').click(function() {
+//    (".content_blockRegistration").show();
+//
+//});
+
 
 //var classesHideElement = 'hide-element-sm hide-element-xs hide-element-lg hide-element-md';
 //

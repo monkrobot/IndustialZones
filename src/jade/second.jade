@@ -8,7 +8,8 @@ block content
                   input(type="search" name="search" placeholder="")
                   //input(type="submit" value="Поиск")
                div.blockSearch_buttonSearch
-                  p Поиск
+                  div.blockSearch_button
+                     p Поиск
 
          div.blockSearch_content
             div.blockSearch_columnOne
@@ -103,12 +104,54 @@ block content
                      p кВт
 
       div.content_blockMap
-      //div.content_sidebar
-         <i class="fa fa-chevron-up" aria-hidden="true"></i> //стрелка вверх
-         <i class="fa fa-chevron-down" aria-hidden="true"></i> // стрелка вниз
-         <i class="fa fa-map-marker" aria-hidden="true"></i> // маркер
+         div.content_map
+
+         div.content_sidebar
+            div.sidebar_upperButtons
+               //i(class="fa fa-chevron-up" aria-hidden="true")//стрелка вверх
+               //i(class="fa fa-chevron-down" aria-hidden="true")// стрелка вниз
+               //i(class="fa fa-map-marker" aria-hidden="true") // маркер
 
 
-      //   <i class="fa fa-trash-o" aria-hidden="true"></i> //мусорка
+               //i(class="fa fa-trash-o" aria-hidden="true")//мусорка
 
-      //   <i class="fa fa-camera" aria-hidden="true"></i> //камера
+               //i(class="fa fa-camera" aria-hidden="true")//камера
+
+            div.sidebar_bottomButtons
+
+         div.content_information
+
+      div.content_objectDescription
+         div.objectDescription_header
+            p Подробное описание выбранного обьекта
+
+         div.objectDescription_content
+            -var description = [];
+            -description.push({name:'Район:', nameContent:'#'});
+            -description.push({name:'Адрес:', nameContent:'#'});
+            -description.push({name:'Кадастровый номер:', nameContent:'#'});
+            -description.push({name:'Вид разрешенного использования:', nameContent:'#'});
+            -description.push({name:'Правообладатель:', nameContent:'#'});
+            -description.push({name:'Вид деятельности (для участков в частной собственности):', nameContent:'#'});
+            -description.push({name:'Основание(для участков в частной собственности):', nameContent:'#'});
+            -description.push({name:'Технические возможности подключения:', nameContent:'#'});
+            -description.push({name:'Водоснабжение:', nameContent:'#'});
+            -description.push({name:'Водоотведение:', nameContent:'#'});
+            -description.push({name:'Теплоснабжение:', nameContent:'#'});
+            -description.push({name:'Электроснабжение:', nameContent:'#'});
+            -description.push({name:'Газоснабжение:', nameContent:'#'});
+            -description.push({name:'Градостроительные преобразования:', nameContent:'#'});
+            -description.push({name:'Сроки реализации:', nameContent:'#'});
+
+               each item in description
+
+                  div.objectDescription_itemHeader
+                     p!= item.name
+                  div.objectDescription_itemContent
+                     p!= item.nameContent
+
+         div.objectDescription_buttons
+            div.objectDescription_buttonReference
+               p Заказать справку
+            div.objectDescription_Editing
+               p Редактировать
