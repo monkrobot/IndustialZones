@@ -9,18 +9,19 @@ block content
                   //input(type="submit" value="Поиск")
                div.blockSearch_buttonSearch
                   div.blockSearch_button
-                     p Поиск
+                     p ПОИСК
 
          div.blockSearch_content
             div.blockSearch_columnOne
                div.blockSearch_priorityArea
                   p Приоритетный район:
-                  select
-                     option Приоритетные районы(2)
-                     option Конная Лахта
-                     option Красносельский
-                  //form
-                  //   input
+                  div.blockSearch_select
+                     select
+                        option Приоритетные районы(2)
+                        option Конная Лахта
+                        option Красносельский
+                     //form
+                     //   input
                div.blockSearch_square
                   p Площадь ЗУ:
                   div.blockSearch_quantityOfSquare
@@ -46,12 +47,13 @@ block content
             div.blockSearch_columnTwo
                div.blockSearch_typeOfUse
                   p Вид разрешенного использования:
-                  select
-                     option Выберите вид разрешенного использовани
-                     option 1
-                     option 2
-                  //form
-                  //   input
+                  div.blockSearch_select
+                     select
+                        option Выберите вид разрешенного использовани
+                        option 1
+                        option 2
+                     //form
+                     //   input
                div.blockSearch_gasification
                   p Газоснабжение:
                   div.blockSearch_quantityOfGas
@@ -76,12 +78,13 @@ block content
             div.blockSearch_columnThree
                div.blockSearch_classOfDanger
                   p Класс опасности производства:
-                  select
-                     option Выберите класс опасности производства
-                     option 1
-                     option 2
-                  //form
-                  //   input
+                  div.blockSearch_select
+                     select
+                        option Выберите класс опасности производства
+                        option 1
+                        option 2
+                     //form
+                     //   input
                div.blockSearch_waterSupply
                   p Водоснабжение:
                   div.blockSearch_quantityOfWater
@@ -108,6 +111,18 @@ block content
 
          div.content_sidebar
             div.sidebar_upperButtons
+               div.sidebar_angleTopButton
+                  img(src="../images/angleTop.gif")
+               div.sidebar_industrialZonesBordersButton
+                  img(src="../images/industrialZonesBorders.gif")
+               div.sidebar_sectionsButton
+                  img(src="../images/sections.gif")
+               div.sidebar_redactorButton
+                  img(src="../images/redactor.gif")
+               div.sidebar_trashButton
+                  img(src="../images/trash.gif")
+               div.sidebar_lineChangingButton
+                  img(src="../images/lineChanging.gif")
                //i(class="fa fa-chevron-up" aria-hidden="true")//стрелка вверх
                //i(class="fa fa-chevron-down" aria-hidden="true")// стрелка вниз
                //i(class="fa fa-map-marker" aria-hidden="true") // маркер

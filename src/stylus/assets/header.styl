@@ -2,25 +2,30 @@
   padding 0
   margin 0
   display flex
+  justify-content space-around
   align-items flex-end
 
 .header_logo
-  flex-basis 10%
+  flex-basis 9%
   padding 0.5em 0
 
   img
     margin-left 10%
     height auto
-    width 70%
+    width 45%
 
 .header_organizationAndName
-  flex-basis 80%
+  flex-basis 90%
+
+.header_organization, .header_name
+  margin-bottom 1%
 
 .header_buttons
   flex-basis 10%
+  height auto
 
-.buttonEntrance, .buttonRegistration
-  margin-right 20%
+.header_buttonEntrance, .header_buttonRegistration
+  text-align right
+  margin 0 20% 10% 0
   p
     cursor pointer
-    margin-left auto
