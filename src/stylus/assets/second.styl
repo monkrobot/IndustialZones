@@ -1,103 +1,135 @@
-
+//.content_blockSearch
 .content_blockSearch
   padding-bottom 3%
   box-shadow  0 3px 4px rgba(0,0,0,0.5)
 
 
-.blockSearch_wrapperSearch
-  width 40%
-  padding 3% 0
-  margin 0 auto
+  .blockSearch_wrapperSearch
+    width 40%
+    padding 3% 0
+    margin 0 auto
 
-.blockSearch_search
-  display flex
-  //justify-content center
-  //heigth 100px
-  //text-align center
+  .blockSearch_search
+    display flex
+    //justify-content center
+    //heigth 100px
+    //text-align center
 
-  form
-    width 70%
-    input
-      width 100%
-      height 100%
+    form
+      width 70%
+      input
+        width 100%
+        height 100%
 
-  .blockSearch_buttonSearch
-    width 30%
-    background-color #00bbfa
-    .blockSearch_button
-      text-align center
-      height 100%
-      color #ffffff
-      cursor pointer
+    .blockSearch_buttonSearch
+      width 30%
+      background-color #29ABE2
+      .blockSearch_button
+        text-align center
+        height 100%
+        color #ffffff
+        cursor pointer
 
-      p
-        margin 3% 0
+        p
+          margin 3% 0
 
+//.content_blockSearch.blockSearch_content
 .blockSearch_content
   width 85%
   margin 0 auto
   display flex
   justify-content center
 
-.blockSearch_columnOne, .blockSearch_columnTwo, .blockSearch_columnThree
-  width 33%
+  .blockSearch_columnOne, .blockSearch_columnTwo, .blockSearch_columnThree
+    width 33%
 
-.blockSearch_priorityArea, .blockSearch_square, .blockSearch_severage, .blockSearch_typeOfUse, .blockSearch_gasification, .blockSearch_heatSupply, .blockSearch_classOfDanger, .blockSearch_waterSupply, .blockSearch_electricitySupply
-  background-color rgba(1,1,1,0.05)
-  margin 4px 2px
-  padding 3%
+  .blockSearch_priorityArea, .blockSearch_square, .blockSearch_severage, .blockSearch_typeOfUse, .blockSearch_gasification, .blockSearch_heatSupply, .blockSearch_classOfDanger, .blockSearch_waterSupply, .blockSearch_electricitySupply
+    background-color rgba(1,1,1,0.05)
+    margin 4px 2px
+    padding 3%
 
-.blockSearch_quantityOfSquare, .blockSearch_quantityOfSeverage, .blockSearch_quantityOfGas, .blockSearch_quantityOfHeat, .blockSearch_quantityOfWater, .blockSearch_quantityOfElectricity
+  .blockSearch_quantityOfSquare, .blockSearch_quantityOfSeverage, .blockSearch_quantityOfGas, .blockSearch_quantityOfHeat, .blockSearch_quantityOfWater, .blockSearch_quantityOfElectricity
 
-  p, form
-    25%
-    display inline-block
+    p, form
+      25%
+      display inline-block
 
-div.blockSearch_select, .blockSearch_quantityOfSquare, .blockSearch_quantityOfSeverage, .blockSearch_quantityOfGas, .blockSearch_quantityOfHeat, .blockSearch_quantityOfWater, .blockSearch_quantityOfElectricity
-  margin-top 2%
+  div.blockSearch_select, .blockSearch_quantityOfSquare, .blockSearch_quantityOfSeverage, .blockSearch_quantityOfGas, .blockSearch_quantityOfHeat, .blockSearch_quantityOfWater, .blockSearch_quantityOfElectricity
+    margin-top 2%
 
-//.content_sidebar
-//  display flex
-//  justify-content center
-//  align-items flex-start
 
-.content_map, .content_sidebar
+//Content_blockMap
+.content_map, .content_blockSidebarInformation //.content_sidebar
   position relative
   //display inline-block
 
+//.content_map
 //This is very bad!
 .content_map
   z-index 1
 
-.content_sidebar
-  top -120px
+  canvas
+    height 100%
+    width 100%
+
+//.content_blockSidebarInformation
+.content_blockSidebarInformation
+  display flex
+  justify-content space-around
+  align-items flex-start
+  top -550px
   z-index 2
-  width 70px
-  margin 0 3%
-  box-shadow  0 0 7px rgba(0,0,0,0.5)
-  vertical-align middle
 
-.sidebarButtons
-  text-align center
+  .content_sidebar
+    z-index 2
+    width 70px
+    margin 0 3%
+    box-shadow  0 0 7px rgba(0,0,0,0.5)
 
+    .sidebarButtons
+      background-color #ffffff
+      z-index 2
+      text-align center
+
+  .information_objectName, .information_objectAdress
+    background-color #ffffff
+    box-shadow  0 0 7px rgba(0,0,0,0.5)
+    padding 3%
+    //margin 0 3%
+
+    p
+      margin 10px 0
+
+  .information_wrapperObjectInformation
+    background-color #29ABE2
+    color #ffffff
+    box-shadow  0 0 7px rgba(0,0,0,0.5)
+    padding 3%
+    //margin 0 3%
+
+
+
+
+//.Content_objectDescription
 .content_objectDescription
   width 90%
   margin 2% auto
   border-bottom 2px solid #000
 
-.objectDescription_header
-  border-bottom 2px solid #000
-  padding-left 5%
-  font-size 1.5em
-  font-weight bold
+  .objectDescription_header
+    border-bottom 2px solid #000
+    padding-left 5%
+    font-size 1.5em
+    font-weight bold
 
-.objectDescription_itemHeader
-  margin-left 5%
-  font-weight bold
+    .objectDescription_itemHeader
+      margin-left 5%
+      font-weight bold
 
-.objectDescription_itemContent
-  margin-left 10%
+    .objectDescription_itemContent
+      margin-left 10%
 
+//.objectDescription_buttons
 .objectDescription_buttons
   width 35%
   margin 2% auto

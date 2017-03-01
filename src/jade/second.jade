@@ -107,35 +107,49 @@ block content
                      p кВт
 
       div.content_blockMap
+
          div.content_map
             canvas
 
-         div.content_sidebar
-            div.sidebar_upperButtons
-               div.sidebar_angleTopButton.sidebarButtons
-                  img(title="Свернуть панель инструментов" src="../images/angleTop.gif")
-               div.sidebar_industrialZonesBordersButton.sidebarButtons
-                  img(src="../images/industrialZonesBorders.gif")
-               div.sidebar_sectionsButton.sidebarButtons
-                  img(src="../images/sections.gif")
-               div.sidebar_redactorButton.sidebarButtons
-                  img(src="../images/redactor.gif")
-               div.sidebar_trashButton.sidebarButtons
-                  img(src="../images/trash.gif")
-               div.sidebar_lineChangingButton.sidebarButtons
-                  img(src="../images/lineChanging.gif")
-               //i(class="fa fa-chevron-up" aria-hidden="true")//стрелка вверх
-               //i(class="fa fa-chevron-down" aria-hidden="true")// стрелка вниз
-               //i(class="fa fa-map-marker" aria-hidden="true") // маркер
+
+         div.content_blockSidebarInformation
+            div.content_sidebar
+               div.sidebar_upperButtons
+                  div.sidebar_angleTopButton.sidebarButtons
+                     img(title="Свернуть панель инструментов" src="../images/angleTop.gif")
+                  div.sidebar_industrialZonesBordersButton.sidebarButtons
+                     img(src="../images/industrialZonesBorders.gif")
+                  div.sidebar_sectionsButton.sidebarButtons
+                     img(src="../images/sections.gif")
+                  div.sidebar_redactorButton.sidebarButtons
+                     img(src="../images/redactor.gif")
+                  div.sidebar_trashButton.sidebarButtons
+                     img(src="../images/trash.gif")
+                  div.sidebar_lineChangingButton.sidebarButtons
+                     img(src="../images/lineChanging.gif")
+                  //i(class="fa fa-chevron-up" aria-hidden="true")//стрелка вверх
+                  //i(class="fa fa-chevron-down" aria-hidden="true")// стрелка вниз
+                  //i(class="fa fa-map-marker" aria-hidden="true") // маркер
 
 
-               //i(class="fa fa-trash-o" aria-hidden="true")//мусорка
+                  //i(class="fa fa-trash-o" aria-hidden="true")//мусорка
 
-               //i(class="fa fa-camera" aria-hidden="true")//камера
+                  //i(class="fa fa-camera" aria-hidden="true")//камера
 
-            div.sidebar_bottomButtons
+               div.sidebar_bottomButtons
 
-         div.content_information
+            //div.content_information
+            div.information_objectName
+               p Конная Лахта
+            div.information_objectAdress
+               p СПб, ул. Электропультовцев, д. 7, литера У
+            div.information_wrapperObjectInformation
+               div.information_buttonClose
+
+               div.information_objectInformation
+                  div.information_objectInformationArrow
+                  div.information_objectInformationText
+                     p Информация о найденных объектах
 
       div.content_objectDescription
          div.objectDescription_header

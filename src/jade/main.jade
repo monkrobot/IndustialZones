@@ -2,17 +2,17 @@ extends ./templates/base_template.jade
 block content
     div.contentMain
         div.content_blockEntrance
-            div.blockEntrance_WrapperContent
-                div.blockEntrance_content
-                    div.blockEntrance_enterLogin
-
-                    div.blockEntrance_enterPassword
-
-                    div.blockEntrance_forgetPassword
-
-                    div.blockEntrance_buttonEntrance
-
-        div.content_blockRegistration.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
+            div.blockEntrance_content
+                div.blockEntrance_enterLogin
+                    input(type="text")
+                div.blockEntrance_enterPassword
+                    input(type="password")
+                div.blockEntrance_forgetPassword
+                    p Забыли пароль?
+                div.blockEntrance_buttonEntrance
+                    p Войти
+        div.content_blockRegistration
+            //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
             div.blockRegistration_header
                 div.blockRegistration_buttonCancel
 
@@ -31,10 +31,12 @@ block content
                                 input(type="radio" name="whoAreYou" value="stateExecuter")
                                 = 'ИОГВ'
 
-                        div.blockRegistration_person.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
+                        div.blockRegistration_person
+                            //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
 
                             div.blockRegistration_enterYourName
-                                div.blockRegistration_Surname.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
+                                div.blockRegistration_Surname
+                                    //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
                                     p Фамилия
                                     input(type="text")
                                 div.blockRegistration__Name
@@ -50,14 +52,16 @@ block content
                                     input(type="radio" name="document" value="inn")
                                     = 'ИНН'
                             div.blockRegistration_documentData
-                                div.blockRegistration_passport.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
+                                div.blockRegistration_passport
+                                    //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
                                     div.blockRegistration_passportSeria
                                         p Серия паспорта
                                         input(type="text")
                                     div.blockRegistration_passportNumber
                                         p Номер паспорта
                                         input(type="text")
-                                div.blockRegistration_inn.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
+                                div.blockRegistration_inn
+                                    //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
                                     div.blockRegistration_innNumber
                                         p Номер ИНН
                                         input(type="text")
@@ -87,4 +91,6 @@ block content
                             .blockRegistration_email
                                 p Электронная почта
                                 input(type="text")
-                        div.blockRegistration_buttonSend
+                        div.blockRegistration_wrapperButtonSend
+                            div.blockRegistration_buttonSend
+                                p Отправить

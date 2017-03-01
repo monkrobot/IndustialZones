@@ -1,0 +1,200 @@
+//Media
+
+$screen-lg = 1100px
+$screen-lg-min = $screen-lg
+
+$screen-md = 900px
+$screen-md-min = $screen-md
+$screen-md-max = $screen-lg-min - 1px
+
+$screen-sm = 500px
+$screen-sm-min = $screen-sm
+$screen-sm-max = $screen-md-min - 1px
+
+$screen-xs = 250px
+$screen-xs-max = $screen-sm-min - 1px
+
+//common variables
+$base_font = normal $base_font_size\/140% Calibri, sans-serif
+$base_font_size = 16px
+
+//colors
+$color-grey_mask = rgba( 0, 0, 0, 0.1)
+
+$all-colors =  {black_00:#000000
+                 white_01: #ffffff
+                 orange_02: #ff8a00
+                 blue-grey2_03: #596f78
+                 blue_04: #62aebe
+                 grey3_05: #606060
+                 grey1_06: #9f9d9d
+                 grey0_07: #f0eeee
+                 blue-grey_08: #596e77
+                 grey2_09: #3f3b3a
+                 red_10: #ff0000
+                 brown_11: #4f2c0c
+                 gold_12: #eebd03
+                 brown_13: #5c3b1d
+                 brown_grey_14: #bfb1a5}
+
+
+//->>get color
+getColorByNumber(number)
+  values($all-colors)[number]
+
+
+////default settings for tags
+//h1
+//  font-size 1.875em
+//h2
+//  font-size 1.625em
+//h3
+//  font-size 1.250em
+//
+//for header in 1..6
+//  h{header}
+//    text-transform uppercase
+//    line-height 110%
+//    color getColorByNumber(0)
+////display block
+
+
+
+
+
+
+////common clases
+//
+////->> inner-content_container
+//
+//inner-content_container()
+//
+//  .helper
+//    display  none
+//
+//  #inner-content_container
+//    #wrapper_container
+//      width  94%
+//      display  block
+//      //min-height 45em
+//      height  auto
+//      padding-top 1.625em
+//      margin 0 auto
+//      #container
+//        display  block
+//        width  100%
+//        height  auto
+//
+//
+//        container_header()
+
+
+////->> container_header
+//container_header()
+//
+//  .container_header
+//    padding 0.75em 0
+//    background-color $background-newsAnnouncementsHeader
+//
+//
+//    #wrapper-container_header
+//      width 93.5%
+//      padding-left 1.5%
+//      text-align left
+//
+//      h2
+//        color getColorByNumber(1)
+
+//// Media ->> container_header
+//@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
+//
+//  #inner-content_container
+//    #wrapper_container
+//      #container
+//
+//        .container_header
+//
+//          #wrapper-container_header
+//            margin 0 auto
+//            padding-left 0 !important
+//            text-align center !important
+//
+//
+//  @media (max-width: $screen-xs-max)
+//
+//    #inner-content_container
+//      #wrapper_container
+//        #container
+//
+//          .container_header
+//
+//            #wrapper-container_header
+//              margin 0 auto
+//              padding-left 0 !important
+//              text-align center !important
+//
+//
+//    //->> text
+//    .no-uppercase
+//      text-transform none
+//
+//    //->> colors
+//    .background_color-grey_mask{
+//      background: $color-grey_mask
+//    }
+//
+//for key, value in $all-colors
+//  .base_color-{key}
+//    color value
+//
+//->> hide element
+@media (min-width: $screen-lg-min)
+  .hide-element-lg
+    display none !important
+
+  .show-element-lg
+    display block !important
+
+
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max)
+    .hide-element-md
+      display none !important
+
+    .show-element-md
+      display block !important
+
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max)
+      .hide-element-sm
+        display none !important
+
+      .show-element-sm
+        display block !important
+
+
+      @media (max-width: $screen-xs-max)
+        .hide-element-xs
+          display none !important
+
+        .show-element-xs
+          display block !important
+
+hide-element()
+  display none
+
+//->> show element
+show-element()
+  display block
+
+//body
+//  min-width: 250px !important;
+//
+//.textCapitalize
+//  text-transform capitalize
+//
+//
+//
+//
+//*:focus
+//  outline 0
+
