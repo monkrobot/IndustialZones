@@ -108,20 +108,21 @@ block content
 
       div.content_blockMap
          div.content_map
+            canvas
 
          div.content_sidebar
             div.sidebar_upperButtons
-               div.sidebar_angleTopButton
-                  img(src="../images/angleTop.gif")
-               div.sidebar_industrialZonesBordersButton
+               div.sidebar_angleTopButton.sidebarButtons
+                  img(title="Свернуть панель инструментов" src="../images/angleTop.gif")
+               div.sidebar_industrialZonesBordersButton.sidebarButtons
                   img(src="../images/industrialZonesBorders.gif")
-               div.sidebar_sectionsButton
+               div.sidebar_sectionsButton.sidebarButtons
                   img(src="../images/sections.gif")
-               div.sidebar_redactorButton
+               div.sidebar_redactorButton.sidebarButtons
                   img(src="../images/redactor.gif")
-               div.sidebar_trashButton
+               div.sidebar_trashButton.sidebarButtons
                   img(src="../images/trash.gif")
-               div.sidebar_lineChangingButton
+               div.sidebar_lineChangingButton.sidebarButtons
                   img(src="../images/lineChanging.gif")
                //i(class="fa fa-chevron-up" aria-hidden="true")//стрелка вверх
                //i(class="fa fa-chevron-down" aria-hidden="true")// стрелка вниз
