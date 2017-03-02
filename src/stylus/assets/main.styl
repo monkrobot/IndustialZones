@@ -33,6 +33,11 @@
   padding 3% 0
 
 //.content_blockRegistration
+
+.blockRegistration_commonClass
+  width 33.3%
+  //text-align left
+
 .content_blockRegistration
   width 50%
   margin 1% auto
@@ -56,7 +61,14 @@
       text-align center
 
       .blockRegistration_form
-        text-align left
+        //display flex
+        //justify-content center
+
+        form
+          display flex
+          width 100%
+          justify-content left
+          text-align left
 
     .blockRegistration_enterYourName
       display flex
@@ -64,7 +76,7 @@
 
       .blockRegistration_Surname, .blockRegistration__Name, .blockRegistration_patronymic
         text-align left
-        flex-basis 32%
+        //flex-basis 32%
         margin 0 1%
 
         input
@@ -74,18 +86,24 @@
       text-align left
       margin 3% 0 0 0
 
+      form
+        display flex
+        justify-content left
+
     .blockRegistration_passport, .blockRegistration_inn
-      margin 0
+      //margin 0
       display flex
       justify-content left
 
       .blockRegistration_passportSeria, .blockRegistration_passportNumber, .blockRegistration_innNumber
         text-align left
-        flex-basis 32%
+        //flex-basis 32%
         margin 0 1%
 
         input
           width 85%
+
+
 
 .blockRegistration_organizationInformation
   display flex

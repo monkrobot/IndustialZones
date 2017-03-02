@@ -24,45 +24,50 @@ block content
                     div.blockRegistration_whoAreYou
                         div.blockRegistration_form
                             form(name="registration" method="post" action="registration.php")
-                                input(type="radio" name="whoAreYou" value="person")
-                                = 'Физическое лицо'
-                                input(type="radio" name="whoAreYou" value="legalEntity")
-                                = 'Юридическое лицо'
-                                input(type="radio" name="whoAreYou" value="stateExecuter")
-                                = 'ИОГВ'
+                                div.blockRegistration_inputPerson.blockRegistration_commonClass
+                                    input(type="radio" name="whoAreYou" value="person")
+                                    = 'Физическое лицо'
+                                div.blockRegistration_inputLegalEntity.blockRegistration_commonClass
+                                    input(type="radio" name="whoAreYou" value="legalEntity")
+                                    = 'Юридическое лицо'
+                                div.blockRegistration_inputStateExecuter.blockRegistration_commonClass
+                                    input(type="radio" name="whoAreYou" value="stateExecuter")
+                                    = 'ИОГВ'
 
                         div.blockRegistration_person
                             //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
 
                             div.blockRegistration_enterYourName
-                                div.blockRegistration_Surname
+                                div.blockRegistration_Surname.blockRegistration_commonClass
                                     //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
                                     p Фамилия
                                     input(type="text")
-                                div.blockRegistration__Name
+                                div.blockRegistration__Name.blockRegistration_commonClass
                                     p Имя
                                     input(type="text")
-                                div.blockRegistration_patronymic
+                                div.blockRegistration_patronymic.blockRegistration_commonClass
                                     p Отчество
                                     input(type="text")
                             div.blockRegistration_document
                                 form(name="registration" method="post" action="registration.php")
-                                    input(type="radio" name="document" value="passport")
-                                    = 'Паспортные данные'
-                                    input(type="radio" name="document" value="inn")
-                                    = 'ИНН'
+                                    div.blockRegistration_inputPassport.blockRegistration_commonClass
+                                        input(type="radio" name="document" value="passport")
+                                        = 'Паспортные данные'
+                                    div.blockRegistration_inputInn.blockRegistration_commonClass
+                                        input(type="radio" name="document" value="inn")
+                                        = 'ИНН'
                             div.blockRegistration_documentData
                                 div.blockRegistration_passport
                                     //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
-                                    div.blockRegistration_passportSeria
+                                    div.blockRegistration_passportSeria.blockRegistration_commonClass
                                         p Серия паспорта
                                         input(type="text")
-                                    div.blockRegistration_passportNumber
+                                    div.blockRegistration_passportNumber.blockRegistration_commonClass
                                         p Номер паспорта
                                         input(type="text")
                                 div.blockRegistration_inn
                                     //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
-                                    div.blockRegistration_innNumber
+                                    div.blockRegistration_innNumber.blockRegistration_commonClass
                                         p Номер ИНН
                                         input(type="text")
 
@@ -70,11 +75,11 @@ block content
                         div.blockRegistration_legalEntity
 
                             div.blockRegistration_organizationInformation
-                                div.blockRegistration_organizationName
+                                div.blockRegistration_organizationName.blockRegistration_commonClass
                                     p Наименование
                                     input(type="text")
 
-                                div.blockRegistration_registrationNumber
+                                div.blockRegistration_registrationNumber.blockRegistration_commonClass
                                     p Номер свидетельства о регистрации
                                     input(type="text")
                         div.blockRegistration_stateExecuter
