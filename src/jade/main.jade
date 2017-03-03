@@ -41,13 +41,13 @@ block content
                                 div.blockRegistration_Surname.blockRegistration_commonClass
                                     //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
                                     p Фамилия
-                                    input(type="text")
+                                    input(class ="inputText" type="text")
                                 div.blockRegistration__Name.blockRegistration_commonClass
                                     p Имя
-                                    input(type="text")
+                                    input(class ="inputText" type="text")
                                 div.blockRegistration_patronymic.blockRegistration_commonClass
                                     p Отчество
-                                    input(type="text")
+                                    input(class ="inputText" type="text")
                             div.blockRegistration_document
                                 form(name="registration" method="post" action="registration.php")
                                     div.blockRegistration_inputPassport.blockRegistration_commonClass
@@ -61,15 +61,15 @@ block content
                                     //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
                                     div.blockRegistration_passportSeria.blockRegistration_commonClass
                                         p Серия паспорта
-                                        input(type="text")
+                                        input(class ="inputText" type="text")
                                     div.blockRegistration_passportNumber.blockRegistration_commonClass
                                         p Номер паспорта
-                                        input(type="text")
+                                        input(class ="inputText" type="text")
                                 div.blockRegistration_inn
                                     //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
                                     div.blockRegistration_innNumber.blockRegistration_commonClass
                                         p Номер ИНН
-                                        input(type="text")
+                                        input(class ="inputText" type="text")
 
 
                         div.blockRegistration_legalEntity
@@ -77,25 +77,25 @@ block content
                             div.blockRegistration_organizationInformation
                                 div.blockRegistration_organizationName.blockRegistration_commonClass
                                     p Наименование
-                                    input(type="text")
+                                    input(class ="inputText" type="text")
 
                                 div.blockRegistration_registrationNumber.blockRegistration_commonClass
                                     p Номер свидетельства о регистрации
-                                    input(type="text")
+                                    input(class ="inputText" type="text")
                         div.blockRegistration_stateExecuter
 
                             div.blockRegistration_stateExecuterInformation
-                                div.blockRegistration_stateExecuterName
+                                div.blockRegistration_stateExecuterName.blockRegistration_commonClass
                                     p Наименование ИОГВ
-                                    input(type="text")
+                                    input(class ="inputText" type="text")
 
-                                div.blockRegistration_stateExecuterPerformer
+                                div.blockRegistration_stateExecuterPerformer.blockRegistration_commonClass
                                     p Должность специалиста
-                                    input(type="text")
+                                    input(class ="inputText" type="text")
                         div.blockRegistration_wrapperEmail
-                            .blockRegistration_email
+                            .blockRegistration_email.blockRegistration_commonClass
                                 p Электронная почта
-                                input(type="text")
+                                input(class ="inputText" type="text")
                         div.blockRegistration_wrapperButtonSend
                             div.blockRegistration_buttonSend
                                 p Отправить

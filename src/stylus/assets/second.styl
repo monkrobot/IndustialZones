@@ -59,9 +59,11 @@
 
 
 //Content_blockMap
-.content_map, .content_blockSidebarInformation //.content_sidebar
+.content_blockMap
   position relative
-  //display inline-block
+//.content_map, .content_blockSidebarInformation //.content_sidebar
+//  position relative
+
 
 //.content_map
 //This is very bad!
@@ -74,10 +76,13 @@
 
 //.content_blockSidebarInformation
 .content_blockSidebarInformation
+  width 100%
+  position absolute
   display flex
-  justify-content space-around
+  //justify-content space-around
   align-items flex-start
-  top -550px
+  top 5%
+  //top 50%
   z-index 2
 
   .content_sidebar
@@ -95,7 +100,7 @@
     background-color #ffffff
     box-shadow  0 0 7px rgba(0,0,0,0.5)
     padding 3%
-    //margin 0 3%
+    margin 0 1%
 
     p
       margin 10px 0
@@ -105,7 +110,7 @@
     color #ffffff
     box-shadow  0 0 7px rgba(0,0,0,0.5)
     padding 3%
-    //margin 0 3%
+    margin 0 3% 0 auto
 
 
 
@@ -141,5 +146,6 @@
     text-align center
     color #ffffff
     background-color #00bbfa
+    border-radius 8px
     p
       margin 3%

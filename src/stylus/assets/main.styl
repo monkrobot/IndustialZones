@@ -1,5 +1,9 @@
 //.content_blockEntrance
 .content_blockEntrance
+  position absolute
+  background-color #ffffff
+  top 50px
+  right 1.5%//20px
   width 20%
   box-shadow  0 0 7px rgba(0,0,0,0.5)
 
@@ -31,12 +35,18 @@
   color #ffffff
   box-shadow  0 0 3px rgba(0,0,0,0.5)
   padding 3% 0
+  border-radius 8px
 
 //.content_blockRegistration
 
 .blockRegistration_commonClass
-  width 33.3%
-  //text-align left
+  width 31%
+  margin 0 1%
+  text-align left
+
+  .inputText
+    margin-top 2%
+    width 85%
 
 .content_blockRegistration
   width 50%
@@ -58,88 +68,23 @@
     margin 3% auto
 
     .blockRegistration_whoAreYou
-      text-align center
 
-      .blockRegistration_form
-        //display flex
-        //justify-content center
+      .blockRegistration_form,.blockRegistration_document, .blockRegistration_wrapperEmail
+        margin-top 2%
 
         form
           display flex
           width 100%
           justify-content left
-          text-align left
+          //text-align left
 
-    .blockRegistration_enterYourName
+    .blockRegistration_enterYourName, .blockRegistration_passport, .blockRegistration_inn, .blockRegistration_organizationInformation, .blockRegistration_stateExecuterInformation
+      margin-top 2%
       display flex
       justify-content left
-
-      .blockRegistration_Surname, .blockRegistration__Name, .blockRegistration_patronymic
-        text-align left
-        //flex-basis 32%
-        margin 0 1%
-
-        input
-          width 85%
-
-    .blockRegistration_document
-      text-align left
-      margin 3% 0 0 0
-
-      form
-        display flex
-        justify-content left
-
-    .blockRegistration_passport, .blockRegistration_inn
-      //margin 0
-      display flex
-      justify-content left
-
-      .blockRegistration_passportSeria, .blockRegistration_passportNumber, .blockRegistration_innNumber
-        text-align left
-        //flex-basis 32%
-        margin 0 1%
-
-        input
-          width 85%
-
-
-
-.blockRegistration_organizationInformation
-  display flex
-  justify-content left
-
-  .blockRegistration_organizationName, .blockRegistration_registrationNumber
-    text-align left
-    //flex-basis 45%
-    margin 0 1.2%
-
-    input
-      width 85%
-
-.blockRegistration_stateExecuterInformation
-  display flex
-  justify-content left
-
-  .blockRegistration_stateExecuterName, .blockRegistration_stateExecuterPerformer
-    text-align left
-    //flex-basis 45%
-    margin 0 1.2%
-
-    //input
-    //  width 85%
-
-.blockRegistration_wrapperEmail
-  margin-top 3%
-  display flex
-
-  .blockRegistration_email
-    text-align left
-    flex-basis 32%
-    margin 0 auto 20px 1.2%
 
 .blockRegistration_wrapperButtonSend
-  padding-bottom 3%
+  padding 3% 0
 
   .blockRegistration_buttonSend
     cursor pointer
@@ -150,6 +95,4 @@
     box-shadow  0 0 3px rgba(0,0,0,0.7)
     color #ffffff
     text-align center
-
-    //p
-    //  margin 3% 0
+    border-radius 8px
