@@ -116,17 +116,17 @@ block content
             div.content_sidebar
                div.sidebar_upperButtons
                   div.sidebar_angleTopButton.sidebarButtons
-                     img(title="Свернуть панель инструментов" src="../images/angleTop.gif")
+                     img(src="../images/svg/angleTop.svg")
                   div.sidebar_industrialZonesBordersButton.sidebarButtons
-                     img(src="../images/industrialZonesBorders.gif")
+                     img(src="../images/svg/industrialZonesBorders.svg")
                   div.sidebar_sectionsButton.sidebarButtons
-                     img(src="../images/sections.gif")
+                     img(src="../images/svg/sections.svg")
                   div.sidebar_redactorButton.sidebarButtons
-                     img(src="../images/redactor.gif")
+                     img(src="../images/svg/redactor.svg")
                   div.sidebar_trashButton.sidebarButtons
-                     img(src="../images/trash.gif")
+                     img(src="../images/svg/trash.svg")
                   div.sidebar_lineChangingButton.sidebarButtons
-                     img(src="../images/lineChanging.gif")
+                     img(src="../images/svg/lineChanging.svg")
                   //i(class="fa fa-chevron-up" aria-hidden="true")//стрелка вверх
                   //i(class="fa fa-chevron-down" aria-hidden="true")// стрелка вниз
                   //i(class="fa fa-map-marker" aria-hidden="true") // маркер
@@ -145,11 +145,30 @@ block content
                p СПб, ул. Электропультовцев, д. 7, литера У
             div.information_wrapperObjectInformation
                div.information_buttonClose
-
+                  img(src="../images/svg/whiteCloseX.svg")
                div.information_objectInformation
                   div.information_objectInformationArrow
+                     img(src="../images/svg/triangleBottom.svg")
                   div.information_objectInformationText
                      p Информация о найденных объектах
+
+               -var information = [];
+               -information.push({number:'1', area:'Конная Лахта', adress:'СПб, ул.Электропультовцев, д.7, литера У', more:'#'});
+               -information.push({number:'2', area:'Конная Лахта', adress:'СПб, ул.Электропультовцев, д.7, литера У', more:'#'});
+               each item in information
+
+                  div.information_list
+                     div.information_wrapperNumberContent
+                        div.information_wrapperListNumber
+                           div.information_listNumber
+                              p!= item.number
+                        div.information_listContent
+                           div.information_listArea
+                              p!= 'Район: ' + item.area
+                           div.information_listAdress
+                              p!= 'Адрес: ' + item.adress
+                     div.information_listMore
+                        a(href!= item.more) Подробнее
 
       div.content_objectDescription
          div.objectDescription_header
@@ -181,9 +200,9 @@ block content
                      p!= item.nameContent
 
          div.objectDescription_buttons
-            div.objectDescription_buttonReference
+            div.objectDescription_buttonReference.objectDescription_bottomButtons
                p Заказать справку
-            div.objectDescription_Editing
+            div.objectDescription_buttonEditing.objectDescription_bottomButtons
                p Редактировать
 
       div.content_objectDescription
@@ -195,92 +214,92 @@ block content
             div.objectDescription_itemHeader
                p Район:
             div.objectDescription_itemContent
-               input(type="text")
+               input(type="text" size="20")
 
             div.objectDescription_itemHeader
                p Адрес:
             div.objectDescription_itemContent
-               input(type="text")
+               input(type="text" size="40")
 
             div.objectDescription_itemHeader
                p Кадастровый номер:
             div.objectDescription_itemContent
-               input(type="text")
+               input(type="text" size="20")
 
             div.objectDescription_itemHeader
                p Вид разрешенного использования:
             div.objectDescription_itemContent
-               input(type="text")
+               input(type="text" size="40")
 
             div.objectDescription_itemHeader
                p Правообладатель:
             div.objectDescription_itemContent
-               input(type="text")
+               input(type="text" size="40")
 
             div.objectDescription_itemHeader
                p Вид деятельности (для участков в частной собственности):
             div.objectDescription_itemContent
-               input(type="text")
+               input(type="text" size="40")
 
             div.objectDescription_itemHeader
                p Основание(для участков в частной собственности):
             div.objectDescription_itemContent
-               input(type="text")
+               input(type="text" size="40")
 
             div.objectDescription_itemHeader
                p Технические возможности подключения:
             div.objectDescription_itemContent
-               input(type="text")
+               textarea(cols="40" rows="2")
 
             div.objectDescription_itemHeader
                p Водоснабжение:
             div.objectDescription_itemContent
-               input(type="text")
-               input(type="text")
+               input(type="text" size="7")
+               input(type="text" size="7")
                p предусматривается от системы централизованного водоснабжения.
 
             div.objectDescription_itemHeader
                p Водоотведение:
             div.objectDescription_itemContent
-               input(type="text")
-               input(type="text")
+               input(type="text" size="7")
+               input(type="text" size="7")
                p предусматривается в систему централизованной канализации.
 
             div.objectDescription_itemHeader
                p Теплоснабжение:
             div.objectDescription_itemContent
-               input(type="text")
-               input(type="text")
+               input(type="text" size="7")
+               input(type="text" size="7")
                p предусматривается от планируемых к строительству источников теплоснабжения.
 
             div.objectDescription_itemHeader
                p Электроснабжение:
             div.objectDescription_itemContent
-               input(type="text")
-               input(type="text")
+               input(type="text" size="7")
+               input(type="text" size="7")
                p предусматривается от системы централизованного электроснабжения.
 
             div.objectDescription_itemHeader
                p Газоснабжение:
             div.objectDescription_itemContent
-               input(type="text")
-               input(type="text")
+               input(type="text" size="7")
+               input(type="text" size="7")
                p предусматривается от городской газораспределительной сети.
 
             div.objectDescription_itemHeader
                p Градостроительные преобразования:
             div.objectDescription_itemContent
-               input(type="text")
+               input(type="text" size="40")
 
             div.objectDescription_itemHeader
                p Сроки реализации:
             div.objectDescription_itemContent
-               input(type="text")
+               input(type="text" size="10")
                p  -
-               input(type="text")
+               input(type="text" size="10")
 
          div.objectDescription_buttons
-            div.objectDescription_buttonReference
-               p Заказать справку
-            div.objectDescription_Editing
-               p Редактировать
+            div.objectDescription_buttonPublish.objectDescription_bottomButtons
+               p Опубликовать
+            div.objectDescription_buttonSave.objectDescription_bottomButtons
+               p Сохранить

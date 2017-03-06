@@ -96,6 +96,8 @@
       z-index 2
       text-align center
 
+  //.content_information
+  //
   .information_objectName, .information_objectAdress
     background-color #ffffff
     box-shadow  0 0 7px rgba(0,0,0,0.5)
@@ -105,15 +107,52 @@
     p
       margin 10px 0
 
+  .information_buttonClose
+    text-align right
+
   .information_wrapperObjectInformation
     background-color #29ABE2
     color #ffffff
     box-shadow  0 0 7px rgba(0,0,0,0.5)
-    padding 3%
+    //padding 0.3%
     margin 0 3% 0 auto
 
+  .information_objectInformation
+    padding 0 2% 2% 2%
+    margin-right 25%
+    .information_objectInformationArrow
+      display inline-block
+      width 5%
+    .information_objectInformationText
+      display inline-block
+      width 93%
 
+  .information_list
+    background-color #ffffff
+    color #000000
+    border-bottom 1px solid #000000
 
+    .information_wrapperListNumber
+      display inline-block
+      margin 0 1%
+      width 9%
+
+      .information_listNumber
+        font-size 1.5em
+        text-align center
+        background-color #00bbfa
+        color #ffffff
+        border-radius 15px
+
+    .information_listContent
+      display inline-block
+      width 87%
+      font-size 0.9em
+
+    .information_listMore
+      margin 0 3% 2% 0
+      text-align right
+      font-size 0.8em
 
 //.Content_objectDescription
 .content_objectDescription
@@ -126,21 +165,23 @@
     padding-left 5%
     font-size 1.5em
     font-weight bold
+    margin-bottom 1%
 
-    .objectDescription_itemHeader
-      margin-left 5%
-      font-weight bold
+  .objectDescription_itemHeader
+    margin-left 5%
+    font-weight bold
 
-    .objectDescription_itemContent
-      margin-left 10%
+  .objectDescription_itemContent
+    margin 0.5% 0 0.5% 7%
 
 //.objectDescription_buttons
 .objectDescription_buttons
   width 35%
   margin 2% auto
 
-  .objectDescription_buttonReference, .objectDescription_Editing
+  .objectDescription_bottomButtons
     display inline-block
+    box-shadow  0 0 7px rgba(0,0,0,0.5)
     width 40%
     margin 0 auto
     text-align center
@@ -149,3 +190,10 @@
     border-radius 8px
     p
       margin 3%
+
+
+//.content_objectDescription - Redactor
+
+.objectDescription_itemContent
+  input, p
+    display inline-block
