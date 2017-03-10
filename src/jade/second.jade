@@ -111,22 +111,43 @@ block content
          div.content_map
             canvas
 
+         //div.content_sidebarInformation
+         //   div.angleTop_comment.sidebar_comment
+         //      p Свернуть панель инструментов
+         //   div.industrialZonesBorders_comment.sidebar_comment
+         //      p Отображение границ промышленных зон
+         //   div.sections_comment.sidebar_comment
+         //      p Отображение земельных участков внутри границ промышленных зон
+         //   div.redactor_comment.sidebar_comment
+         //      p Редактирование информации о выбранном земельном участке
+         //   div.trash_comment.sidebar_comment
+         //      p Удаление выбранного объекта
+         //   div.lineChanging_comment.sidebar_comment
+         //      p Изменение котуров промышленных зон/земельных участков
 
-         div.content_blockSidebarInformation
+         div.content_blockSidebar
             div.content_sidebar
                div.sidebar_upperButtons
                   div.sidebar_angleTopButton.sidebarButtons
-                     img(src="../images/svg/angleTop.svg")
+                     img(src="../images/angleTop.gif")
+                     div.angleTop_comment.sidebar_comment
+                        p Свернуть панель инструментов
+                     //img(src="../images/svg/angleTop.svg")
                   div.sidebar_industrialZonesBordersButton.sidebarButtons
-                     img(src="../images/svg/industrialZonesBorders.svg")
+                     img(src="../images/industrialZonesBorders.gif")
+                     //img(src="../images/svg/industrialZonesBorders.svg")
                   div.sidebar_sectionsButton.sidebarButtons
-                     img(src="../images/svg/sections.svg")
+                     img(src="../images/sections.gif")
+                     //img(src="../images/svg/sections.svg")
                   div.sidebar_redactorButton.sidebarButtons
-                     img(src="../images/svg/redactor.svg")
+                     img(src="../images/redactor.gif")
+                     //img(src="../images/svg/redactor.svg")
                   div.sidebar_trashButton.sidebarButtons
-                     img(src="../images/svg/trash.svg")
+                     img(src="../images/trash.gif")
+                     //img(src="../images/svg/trash.svg")
                   div.sidebar_lineChangingButton.sidebarButtons
-                     img(src="../images/svg/lineChanging.svg")
+                     img(src="../images/lineChanging.gif")
+                     //img(src="../images/svg/lineChanging.svg")
                   //i(class="fa fa-chevron-up" aria-hidden="true")//стрелка вверх
                   //i(class="fa fa-chevron-down" aria-hidden="true")// стрелка вниз
                   //i(class="fa fa-map-marker" aria-hidden="true") // маркер
@@ -138,7 +159,6 @@ block content
 
                div.sidebar_bottomButtons
 
-            //div.content_information
             div.information_objectName
                p Конная Лахта
             div.information_objectAdress
@@ -300,6 +320,7 @@ block content
 
          div.objectDescription_buttons
             div.objectDescription_buttonPublish.objectDescription_bottomButtons
-               p Опубликовать
+               div.publication
+                  p Опубликовать
             div.objectDescription_buttonSave.objectDescription_bottomButtons
                p Сохранить

@@ -41,15 +41,18 @@ block content
                                 div.blockRegistration_Surname.blockRegistration_commonClass
                                     //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
                                     p Фамилия
-                                    input(class ="inputText" type="text")
+                                    form(name="surname" method="post" action="registration.php")
+                                        input(class ="inputText" type="text")
                                 div.blockRegistration__Name.blockRegistration_commonClass
                                     p Имя
-                                    input(class ="inputText" type="text")
+                                    form(name="name" method="post" action="registration.php")
+                                        input(class ="inputText" type="text")
                                 div.blockRegistration_patronymic.blockRegistration_commonClass
                                     p Отчество
-                                    input(class ="inputText" type="text")
+                                    form(name="patronymic" method="post" action="registration.php")
+                                        input(class ="inputText" type="text")
                             div.blockRegistration_document
-                                form(name="registration" method="post" action="registration.php")
+                                form(name="document" method="post" action="registration.php")
                                     div.blockRegistration_inputPassport.blockRegistration_commonClass
                                         input(type="radio" name="document" value="passport")
                                         = 'Паспортные данные'
@@ -61,15 +64,18 @@ block content
                                     //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
                                     div.blockRegistration_passportSeria.blockRegistration_commonClass
                                         p Серия паспорта
-                                        input(class ="inputText" type="text")
+                                        form(name="pasportSeria" method="post" action="registration.php")
+                                            input(class ="inputText" type="text")
                                     div.blockRegistration_passportNumber.blockRegistration_commonClass
                                         p Номер паспорта
-                                        input(class ="inputText" type="text")
+                                        form(name="pasportNumber" method="post" action="registration.php")
+                                            input(class ="inputText" type="text")
                                 div.blockRegistration_inn
                                     //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
                                     div.blockRegistration_innNumber.blockRegistration_commonClass
                                         p Номер ИНН
-                                        input(class ="inputText" type="text")
+                                        form(name="innNumber" method="post" action="registration.php")
+                                            input(class ="inputText" type="text")
 
 
                         div.blockRegistration_legalEntity
@@ -77,25 +83,30 @@ block content
                             div.blockRegistration_organizationInformation
                                 div.blockRegistration_organizationName.blockRegistration_commonClass
                                     p Наименование
-                                    input(class ="inputText" type="text")
+                                    form(name="organizationName" method="post" action="registration.php")
+                                        input(class ="inputText" type="text")
 
                                 div.blockRegistration_registrationNumber.blockRegistration_commonClass
                                     p Номер свидетельства о регистрации
-                                    input(class ="inputText" type="text")
+                                    form(name="registrationNumber" method="post" action="registration.php")
+                                        input(class ="inputText" type="text")
                         div.blockRegistration_stateExecuter
 
                             div.blockRegistration_stateExecuterInformation
                                 div.blockRegistration_stateExecuterName.blockRegistration_commonClass
                                     p Наименование ИОГВ
-                                    input(class ="inputText" type="text")
+                                    form(name="stateExecuterName" method="post" action="registration.php")
+                                        input(class ="inputText" type="text")
 
                                 div.blockRegistration_stateExecuterPerformer.blockRegistration_commonClass
                                     p Должность специалиста
-                                    input(class ="inputText" type="text")
+                                    form(name="stateExecuterPerformer" method="post" action="registration.php")
+                                        input(class ="inputText" type="text")
                         div.blockRegistration_wrapperEmail
                             .blockRegistration_email.blockRegistration_commonClass
                                 p Электронная почта
-                                input(class ="inputText" type="text")
+                                form(name="email" method="post" action="registration.php")
+                                    input(class ="inputText" type="text")
                         div.blockRegistration_wrapperButtonSend
                             div.blockRegistration_buttonSend
                                 p Отправить

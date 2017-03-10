@@ -74,8 +74,21 @@
     height 100%
     width 100%
 
+//.content_sidebarInformation
+//  position absolute
+//  z-index 3
+//  top 10%
+//  left 8%
+//  .sidebar_comment
+//    width 100%
+//    background-color #ffffff
+//    box-shadow  0 0 7px rgba(0,0,0,0.5)
+//    margin-bottom 11%
+//
+//    p
+//      font-size 0.9em
 //.content_blockSidebarInformation
-.content_blockSidebarInformation
+.content_blockSidebar
   width 100%
   position absolute
   display flex
@@ -96,9 +109,16 @@
       z-index 2
       text-align center
 
+      .sidebar_comment
+        left 100px
+        z-index 3
+
+
+
   //.content_information
   //
   .information_objectName, .information_objectAdress
+    z-index 2
     background-color #ffffff
     box-shadow  0 0 7px rgba(0,0,0,0.5)
     padding 3%
@@ -179,17 +199,17 @@
   width 35%
   margin 2% auto
 
-  .objectDescription_bottomButtons
-    display inline-block
-    box-shadow  0 0 7px rgba(0,0,0,0.5)
-    width 40%
-    margin 0 auto
-    text-align center
-    color #ffffff
-    background-color #00bbfa
-    border-radius 8px
-    p
-      margin 3%
+.objectDescription_bottomButtons
+  display inline-block
+  box-shadow  0 0 7px rgba(0,0,0,0.5)
+  width 40%
+  margin 0 auto
+  text-align center
+  color #ffffff
+  background-color #00bbfa
+  border-radius 8px
+  p
+    margin 3%
 
 
 //.content_objectDescription - Redactor
