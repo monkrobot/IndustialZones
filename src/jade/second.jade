@@ -12,31 +12,40 @@ block content
                      p ПОИСК
 
          div.blockSearch_content
-            div.blockSearch_columnOne
-               div.blockSearch_priorityArea
+            div.blockSearch_columnOne.blockSearch_column
+               div.blockSearch_priorityArea.blockSearch_blocks
                   p Приоритетный район:
                   div.blockSearch_select
-                     select
-                        option Приоритетные районы(2)
-                        option Конная Лахта
-                        option Красносельский
+                     div.blockSearch_selectText
+                        p Приоритетные районы(2)
+                     div.blockSearch_selectImg
+                        img(src="../images/svg/greyTriangleBottom.svg")
+                  div.blockSearch_selectItem
+                     input(type="checkbox" name="1")
+                     ="Конная Лахта"
+                     br
+                     input(type="checkbox" name="2")
+                     ="Красносельский"
+                     //select
+                     //   option Приоритетные районы(2)
+                     //   option Конная Лахта
+                     //   option Красносельский
                      //form
                      //   input
-               div.blockSearch_square
+               div.blockSearch_square.blockSearch_blocks
                   p Площадь ЗУ:
-                  div.blockSearch_quantityOfSquare
+                  div.blockSearch_quantityOfSquare.blockSearch_quantity
                      p от
                      form
                         input(type="text" size="3")
                      p до
                      form
                         input(type="text" size="3")
-                     vKv
                         p м.кв
                //водоотведение
-               div.blockSearch_severage
+               div.blockSearch_severage.blockSearch_blocks
                   p Водоотведение:
-                  div.blockSearch_quantityOfSeverage
+                  div.blockSearch_quantityOfSeverage.blockSearch_quantity
                      p от
                      form
                         input(type="text" size="3")
@@ -44,19 +53,29 @@ block content
                      form
                         input(type="text" size="3")
                      p м.куб./сутки
-            div.blockSearch_columnTwo
-               div.blockSearch_typeOfUse
+            div.blockSearch_columnTwo.blockSearch_column
+               div.blockSearch_typeOfUse.blockSearch_blocks
                   p Вид разрешенного использования:
                   div.blockSearch_select
-                     select
-                        option Выберите вид разрешенного использовани
-                        option 1
-                        option 2
+                     div.blockSearch_selectText
+                        p Выберите вид разрешенного использования
+                     div.blockSearch_selectImg
+                        img(src="../images/svg/greyTriangleBottom.svg")
+                  div.blockSearch_selectItem
+                     input(type="checkbox" name="1")
+                     ="1"
+                     br
+                     input(type="checkbox" name="2")
+                     ="2"
+                     //select
+                     //   option Выберите вид разрешенного использовани
+                     //   option 1
+                     //   option 2
                      //form
                      //   input
-               div.blockSearch_gasification
+               div.blockSearch_gasification.blockSearch_blocks
                   p Газоснабжение:
-                  div.blockSearch_quantityOfGas
+                  div.blockSearch_quantityOfGas.blockSearch_quantity
                      p от
                      form
                         input(type="text" size="3")
@@ -64,9 +83,9 @@ block content
                      form
                         input(type="text" size="3")
                      p м.куб./сутки
-               div.blockSearch_heatSupply
+               div.blockSearch_heatSupply.blockSearch_blocks
                   p Теплоснабжение
-                  div.blockSearch_quantityOfHeat
+                  div.blockSearch_quantityOfHeat.blockSearch_quantity
                      p от
                      form
                         input(type="text" size="3")
@@ -75,19 +94,29 @@ block content
                         input(type="text" size="3")
                      p Гкал/час
 
-            div.blockSearch_columnThree
-               div.blockSearch_classOfDanger
+            div.blockSearch_columnThree.blockSearch_column
+               div.blockSearch_classOfDanger.blockSearch_blocks
                   p Класс опасности производства:
                   div.blockSearch_select
-                     select
-                        option Выберите класс опасности производства
-                        option 1
-                        option 2
+                     div.blockSearch_selectText
+                        p Выберите класс опасности производства
+                     div.blockSearch_selectImg
+                        img(src="../images/svg/greyTriangleBottom.svg")
+                  div.blockSearch_selectItem
+                     input(type="checkbox" name="1")
+                     ="1"
+                     br
+                     input(type="checkbox" name="2")
+                     ="2"
+                     //select
+                     //   option Выберите класс опасности производства
+                     //   option 1
+                     //   option 2
                      //form
                      //   input
-               div.blockSearch_waterSupply
+               div.blockSearch_waterSupply.blockSearch_blocks
                   p Водоснабжение:
-                  div.blockSearch_quantityOfWater
+                  div.blockSearch_quantityOfWater.blockSearch_quantity
                      p от
                      form
                         input(type="text" size="3")
@@ -95,9 +124,9 @@ block content
                      form
                         input(type="text" size="3")
                      p м.куб./сутки
-               div.blockSearch_electricitySupply
+               div.blockSearch_electricitySupply.blockSearch_blocks
                   p Электроснабжение
-                  div.blockSearch_quantityOfElectricity
+                  div.blockSearch_quantityOfElectricity.blockSearch_quantity
                      p от
                      form
                         input(type="text" size="3")
@@ -111,19 +140,19 @@ block content
          div.content_map
             canvas
 
-         //div.content_sidebarInformation
-         //   div.angleTop_comment.sidebar_comment
-         //      p Свернуть панель инструментов
-         //   div.industrialZonesBorders_comment.sidebar_comment
-         //      p Отображение границ промышленных зон
-         //   div.sections_comment.sidebar_comment
-         //      p Отображение земельных участков внутри границ промышленных зон
-         //   div.redactor_comment.sidebar_comment
-         //      p Редактирование информации о выбранном земельном участке
-         //   div.trash_comment.sidebar_comment
-         //      p Удаление выбранного объекта
-         //   div.lineChanging_comment.sidebar_comment
-         //      p Изменение котуров промышленных зон/земельных участков
+         div.content_sidebarInformation
+            div.angleTop_comment.sidebar_comment
+               p Свернуть панель инструментов
+            div.industrialZonesBorders_comment.sidebar_comment
+               p Отображение границ промышленных зон
+            div.sections_comment.sidebar_comment
+               p Отображение земельных участков внутри границ промышленных зон
+            div.redactor_comment.sidebar_comment
+               p Редактирование информации о выбранном земельном участке
+            div.trash_comment.sidebar_comment
+               p Удаление выбранного объекта
+            div.lineChanging_comment.sidebar_comment
+               p Изменение котуров промышленных зон/земельных участков
 
          div.content_blockSidebar
             div.content_sidebar
@@ -132,22 +161,17 @@ block content
                      img(src="../images/angleTop.gif")
                      div.angleTop_comment.sidebar_comment
                         p Свернуть панель инструментов
-                     //img(src="../images/svg/angleTop.svg")
+                     img(src="../images/svg/angleBottom.svg")
                   div.sidebar_industrialZonesBordersButton.sidebarButtons
-                     img(src="../images/industrialZonesBorders.gif")
-                     //img(src="../images/svg/industrialZonesBorders.svg")
+                     img(src="../images/svg/industrialZonesBorders.svg")
                   div.sidebar_sectionsButton.sidebarButtons
-                     img(src="../images/sections.gif")
-                     //img(src="../images/svg/sections.svg")
+                     img(src="../images/svg/sections.svg")
                   div.sidebar_redactorButton.sidebarButtons
-                     img(src="../images/redactor.gif")
-                     //img(src="../images/svg/redactor.svg")
+                     img(src="../images/svg/redactor.svg")
                   div.sidebar_trashButton.sidebarButtons
-                     img(src="../images/trash.gif")
-                     //img(src="../images/svg/trash.svg")
+                     img(src="../images/svg/trash.svg")
                   div.sidebar_lineChangingButton.sidebarButtons
-                     img(src="../images/lineChanging.gif")
-                     //img(src="../images/svg/lineChanging.svg")
+                     img(src="../images/svg/lineChanging.svg")
                   //i(class="fa fa-chevron-up" aria-hidden="true")//стрелка вверх
                   //i(class="fa fa-chevron-down" aria-hidden="true")// стрелка вниз
                   //i(class="fa fa-map-marker" aria-hidden="true") // маркер
