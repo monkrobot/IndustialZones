@@ -64,10 +64,12 @@
   .blockSearch_select
     cursor pointer
 
-  .blockSearch_selectItem
+  .blockSearch_selectItem123
+    opacity 0
     box-shadow  0 0 7px rgba(0,0,0,0.5)
 
   .blockSearch_selectText
+    //position relative
     display inline-block
     width 90%
 
@@ -75,6 +77,12 @@
     display inline-block
     width 8%
     text-align right
+
+blockSearch_selectText123:hover+.blockSearch_selectItem123 {
+  opacity 1
+}
+  //z-index 5
+  //top 100px
 
 //Content_blockMap
 .content_blockMap
@@ -86,28 +94,29 @@
 //.content_map
 //This is very bad!
 .content_map
-  z-index 1
+  //z-index 1
 
   canvas
     height 100%
     width 100%
 
-.content_sidebarInformation
-  position absolute
-  z-index 3
-  top 9%
-  left 8%
-  .sidebar_comment
-    width 100%
-    background-color #ffffff
-    box-shadow  0 0 7px rgba(0,0,0,0.5)
-    margin-bottom 10%
+//.content_sidebarInformation
+//  position absolute
+//  z-index 3
+//  top 9%
+//  left 8%
+//  .sidebar_comment
+//    width 100%
+//    background-color #ffffff
+//    box-shadow  0 0 7px rgba(0,0,0,0.5)
+//    margin-bottom 10%
+//
+//    p
+//      padding 0.5%
+//      font-size 0.9em
+//
 
-    p
-      padding 0.5%
-      font-size 0.9em
-
-//.content_blockSidebarInformation
+//.content_blockSidebar
 .content_blockSidebar
   width 100%
   position absolute
@@ -116,31 +125,46 @@
   align-items flex-start
   top 5%
   //top 50%
-  z-index 2
+  //z-index 3
 
   .content_sidebar
-    z-index 2
+    //z-index 2
     width 70px
     margin 0 3%
     box-shadow  0 0 7px rgba(0,0,0,0.5)
 
     .sidebarButtons
       background-color #ffffff
-      z-index 2
+      //z-index 2
       text-align center
 
       .sidebar_comment
+        //z-index 4
         position absolute
-        left 100px
+        left 7%
+        background-color #ffffff
+        box-shadow  0 0 7px rgba(0,0,0,0.5)
+        p
+          padding 0.5%
+          font-size 0.9em
 
-
-
-
+      .angleTop_comment
+        top 5%
+      .industrialZonesBorders_comment
+        top 18%
+      .sections_comment
+        top 33%
+      .redactor_comment
+        top 47%
+      .trash_comment
+        top 62%
+      .lineChanging_comment
+        top 76%
 
   //.content_information
   //
   .information_objectName, .information_objectAdress
-    z-index 2
+    //z-index 2
     background-color #ffffff
     box-shadow  0 0 7px rgba(0,0,0,0.5)
     padding 3%
@@ -151,8 +175,10 @@
 
   .information_buttonClose
     text-align right
+    padding 0.2% 0.5% 0 0
 
   .information_wrapperObjectInformation
+    width 25%
     background-color #29ABE2
     color #ffffff
     box-shadow  0 0 7px rgba(0,0,0,0.5)
@@ -161,7 +187,7 @@
 
   .information_objectInformation
     padding 0 2% 2% 2%
-    margin-right 25%
+    //margin-right 25%
     .information_objectInformationArrow
       display inline-block
       width 5%
@@ -176,15 +202,16 @@
 
     .information_wrapperListNumber
       display inline-block
-      margin 0 1%
-      width 9%
+      vertical-align top
+      margin 1% 1%
+      width 7%
 
       .information_listNumber
         font-size 1.5em
         text-align center
         background-color #00bbfa
         color #ffffff
-        border-radius 15px
+        border-radius 40px
 
     .information_listContent
       display inline-block

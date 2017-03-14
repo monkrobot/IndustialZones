@@ -16,11 +16,11 @@ block content
                div.blockSearch_priorityArea.blockSearch_blocks
                   p Приоритетный район:
                   div.blockSearch_select
-                     div.blockSearch_selectText
+                     div.blockSearch_selectText123
                         p Приоритетные районы(2)
                      div.blockSearch_selectImg
                         img(src="../images/svg/greyTriangleBottom.svg")
-                  div.blockSearch_selectItem
+                  div.blockSearch_selectItem123
                      input(type="checkbox" name="1")
                      ="Конная Лахта"
                      br
@@ -35,24 +35,22 @@ block content
                div.blockSearch_square.blockSearch_blocks
                   p Площадь ЗУ:
                   div.blockSearch_quantityOfSquare.blockSearch_quantity
-                     p от
-                     form
+                     form(name="quantityOfSquare" method="post" action="search.php")
+                        p от
                         input(type="text" size="3")
-                     p до
-                     form
+                        p до
                         input(type="text" size="3")
                         p м.кв
                //водоотведение
                div.blockSearch_severage.blockSearch_blocks
                   p Водоотведение:
                   div.blockSearch_quantityOfSeverage.blockSearch_quantity
-                     p от
-                     form
+                     form(name="quantityOfSeverage" method="post" action="search.php")
+                        p от
                         input(type="text" size="3")
-                     p до
-                     form
+                        p до
                         input(type="text" size="3")
-                     p м.куб./сутки
+                        p м.куб./сутки
             div.blockSearch_columnTwo.blockSearch_column
                div.blockSearch_typeOfUse.blockSearch_blocks
                   p Вид разрешенного использования:
@@ -76,23 +74,21 @@ block content
                div.blockSearch_gasification.blockSearch_blocks
                   p Газоснабжение:
                   div.blockSearch_quantityOfGas.blockSearch_quantity
-                     p от
-                     form
+                     form(name="quantityOfGas" method="post" action="search.php")
+                        p от
                         input(type="text" size="3")
-                     p до
-                     form
+                        p до
                         input(type="text" size="3")
-                     p м.куб./сутки
+                        p м.куб./сутки
                div.blockSearch_heatSupply.blockSearch_blocks
                   p Теплоснабжение
                   div.blockSearch_quantityOfHeat.blockSearch_quantity
-                     p от
-                     form
+                     form(name="quantityOfHeat" method="post" action="search.php")
+                        p от
                         input(type="text" size="3")
-                     p до
-                     form
+                        p до
                         input(type="text" size="3")
-                     p Гкал/час
+                        p Гкал/час
 
             div.blockSearch_columnThree.blockSearch_column
                div.blockSearch_classOfDanger.blockSearch_blocks
@@ -117,42 +113,41 @@ block content
                div.blockSearch_waterSupply.blockSearch_blocks
                   p Водоснабжение:
                   div.blockSearch_quantityOfWater.blockSearch_quantity
-                     p от
-                     form
+                     form(name="quantityOfWater" method="post" action="search.php")
+                        p от
                         input(type="text" size="3")
-                     p до
-                     form
+                        p до
                         input(type="text" size="3")
-                     p м.куб./сутки
+                        p м.куб./сутки
                div.blockSearch_electricitySupply.blockSearch_blocks
                   p Электроснабжение
                   div.blockSearch_quantityOfElectricity.blockSearch_quantity
-                     p от
-                     form
+                     form(name="quantityOfElectricity" method="post" action="search.php")
+                        p от
                         input(type="text" size="3")
-                     p до
-                     form
+                        p до
                         input(type="text" size="3")
-                     p кВт
+                        p кВт
 
       div.content_blockMap
 
          div.content_map
+            //img(src="../images/gerb_spb.jpg")
             canvas
 
-         div.content_sidebarInformation
-            div.angleTop_comment.sidebar_comment
-               p Свернуть панель инструментов
-            div.industrialZonesBorders_comment.sidebar_comment
-               p Отображение границ промышленных зон
-            div.sections_comment.sidebar_comment
-               p Отображение земельных участков внутри границ промышленных зон
-            div.redactor_comment.sidebar_comment
-               p Редактирование информации о выбранном земельном участке
-            div.trash_comment.sidebar_comment
-               p Удаление выбранного объекта
-            div.lineChanging_comment.sidebar_comment
-               p Изменение котуров промышленных зон/земельных участков
+         //div.content_sidebarInformation
+         //   div.angleTop_comment.sidebar_comment
+         //      p Свернуть панель инструментов
+         //   div.industrialZonesBorders_comment.sidebar_comment
+         //      p Отображение границ промышленных зон
+         //   div.sections_comment.sidebar_comment
+         //      p Отображение земельных участков внутри границ промышленных зон
+         //   div.redactor_comment.sidebar_comment
+         //      p Редактирование информации о выбранном земельном участке
+         //   div.trash_comment.sidebar_comment
+         //      p Удаление выбранного объекта
+         //   div.lineChanging_comment.sidebar_comment
+         //      p Изменение котуров промышленных зон/земельных участков
 
          div.content_blockSidebar
             div.content_sidebar
@@ -163,14 +158,24 @@ block content
                         p Свернуть панель инструментов
                      img(src="../images/svg/angleBottom.svg")
                   div.sidebar_industrialZonesBordersButton.sidebarButtons
+                     div.industrialZonesBorders_comment.sidebar_comment
+                        p Отображение границ промышленных зон
                      img(src="../images/svg/industrialZonesBorders.svg")
                   div.sidebar_sectionsButton.sidebarButtons
+                     div.sections_comment.sidebar_comment
+                        p Отображение земельных участков внутри границ промышленных зон
                      img(src="../images/svg/sections.svg")
                   div.sidebar_redactorButton.sidebarButtons
+                     div.redactor_comment.sidebar_comment
+                        p Редактирование информации о выбранном земельном участке
                      img(src="../images/svg/redactor.svg")
                   div.sidebar_trashButton.sidebarButtons
+                     div.trash_comment.sidebar_comment
+                        p Удаление выбранного объекта
                      img(src="../images/svg/trash.svg")
                   div.sidebar_lineChangingButton.sidebarButtons
+                     div.lineChanging_comment.sidebar_comment
+                        p Изменение котуров промышленных зон/земельных участков
                      img(src="../images/svg/lineChanging.svg")
                   //i(class="fa fa-chevron-up" aria-hidden="true")//стрелка вверх
                   //i(class="fa fa-chevron-down" aria-hidden="true")// стрелка вниз
@@ -258,89 +263,104 @@ block content
             div.objectDescription_itemHeader
                p Район:
             div.objectDescription_itemContent
-               input(type="text" size="20")
+               form(name="district" method="post" action="objectDescription.php")
+                  input(type="text" size="20")
 
             div.objectDescription_itemHeader
                p Адрес:
             div.objectDescription_itemContent
-               input(type="text" size="40")
+               form(name="address" method="post" action="objectDescription.php")
+                  input(type="text" size="40")
 
             div.objectDescription_itemHeader
                p Кадастровый номер:
             div.objectDescription_itemContent
-               input(type="text" size="20")
+               form(name="cadastralNumber" method="post" action="objectDescription.php")
+                  input(type="text" size="20")
 
             div.objectDescription_itemHeader
                p Вид разрешенного использования:
             div.objectDescription_itemContent
-               input(type="text" size="40")
+               form(name="typeOfUse" method="post" action="objectDescription.php")
+                  input(type="text" size="40")
 
             div.objectDescription_itemHeader
                p Правообладатель:
             div.objectDescription_itemContent
-               input(type="text" size="40")
+               form(name="rightholder" method="post" action="objectDescription.php")
+                  input(type="text" size="40")
 
             div.objectDescription_itemHeader
                p Вид деятельности (для участков в частной собственности):
             div.objectDescription_itemContent
-               input(type="text" size="40")
+               form(name="kindOfActivity" method="post" action="objectDescription.php")
+                  input(type="text" size="40")
 
             div.objectDescription_itemHeader
                p Основание(для участков в частной собственности):
             div.objectDescription_itemContent
-               input(type="text" size="40")
+               form(name="basis" method="post" action="objectDescription.php")
+                  input(type="text" size="40")
 
             div.objectDescription_itemHeader
                p Технические возможности подключения:
             div.objectDescription_itemContent
-               textarea(cols="40" rows="2")
+               form(name="opportunityOfConnection" method="post" action="objectDescription.php")
+                  textarea(cols="40" rows="2")
 
             div.objectDescription_itemHeader
                p Водоснабжение:
             div.objectDescription_itemContent
-               input(type="text" size="7")
-               input(type="text" size="7")
-               p предусматривается от системы централизованного водоснабжения.
+               form(name="waterSupply" method="post" action="objectDescription.php")
+                  input(type="text" size="7")
+                  input(type="text" size="7")
+                  p предусматривается от системы централизованного водоснабжения.
 
             div.objectDescription_itemHeader
                p Водоотведение:
             div.objectDescription_itemContent
-               input(type="text" size="7")
-               input(type="text" size="7")
-               p предусматривается в систему централизованной канализации.
+               form(name="severage" method="post" action="objectDescription.php")
+                  finput(type="text" size="7")
+                  finput(type="text" size="7")
+                  fp предусматривается в систему централизованной канализации.
 
             div.objectDescription_itemHeader
                p Теплоснабжение:
             div.objectDescription_itemContent
-               input(type="text" size="7")
-               input(type="text" size="7")
-               p предусматривается от планируемых к строительству источников теплоснабжения.
+               form(name="heatSupply" method="post" action="objectDescription.php")
+                  input(type="text" size="7")
+                  input(type="text" size="7")
+                  p предусматривается от планируемых к строительству источников теплоснабжения.
 
             div.objectDescription_itemHeader
                p Электроснабжение:
             div.objectDescription_itemContent
-               input(type="text" size="7")
-               input(type="text" size="7")
-               p предусматривается от системы централизованного электроснабжения.
+               form(name="electricitySupply" method="post" action="objectDescription.php")
+                  input(type="text" size="7")
+                  input(type="text" size="7")
+                  p предусматривается от системы централизованного электроснабжения.
 
             div.objectDescription_itemHeader
                p Газоснабжение:
             div.objectDescription_itemContent
-               input(type="text" size="7")
-               input(type="text" size="7")
-               p предусматривается от городской газораспределительной сети.
+               form(name="gasification" method="post" action="objectDescription.php")
+                  input(type="text" size="7")
+                  input(type="text" size="7")
+                  p предусматривается от городской газораспределительной сети.
 
             div.objectDescription_itemHeader
                p Градостроительные преобразования:
             div.objectDescription_itemContent
-               input(type="text" size="40")
+               form(name="Town-planningTransformations" method="post" action="objectDescription.php")
+                  input(type="text" size="40")
 
             div.objectDescription_itemHeader
                p Сроки реализации:
             div.objectDescription_itemContent
-               input(type="text" size="10")
-               p  -
-               input(type="text" size="10")
+               form(name="dates" method="post" action="objectDescription.php")
+                  input(type="text" size="10")
+                  p  -
+                  input(type="text" size="10")
 
          div.objectDescription_buttons
             div.objectDescription_buttonPublish.objectDescription_bottomButtons
