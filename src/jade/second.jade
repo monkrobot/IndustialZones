@@ -12,26 +12,54 @@ block content
                      p ПОИСК
 
          div.blockSearch_content
-            div.blockSearch_columnOne.blockSearch_column
+
+            div.blockSearch_raw
                div.blockSearch_priorityArea.blockSearch_blocks
                   p Приоритетный район:
                   div.blockSearch_select
-                     div.blockSearch_selectText123
+                     div.blockSearch_selectText
                         p Приоритетные районы(2)
                      div.blockSearch_selectImg
-                        img(src="../images/svg/greyTriangleBottom.svg")
-                  div.blockSearch_selectItem123
-                     input(type="checkbox" name="1")
-                     ="Конная Лахта"
-                     br
-                     input(type="checkbox" name="2")
-                     ="Красносельский"
-                     //select
-                     //   option Приоритетные районы(2)
-                     //   option Конная Лахта
-                     //   option Красносельский
-                     //form
-                     //   input
+                        img(id="selectImgBottom" src="../images/svg/greyTriangleBottom.svg")
+                        img(id="selectImgTop" src="../images/svg/greyTriangleTop.svg")
+                     div.blockSearch_selectItem
+                        input(type="checkbox" name="1")
+                        ="Конная Лахта"
+                        br
+                        input(type="checkbox" name="2")
+                        ="Красносельский"
+
+               div.blockSearch_typeOfUse.blockSearch_blocks
+                  p Вид разрешенного использования:
+                  div.blockSearch_select
+                     div.blockSearch_selectText
+                        p Выберите вид разрешенного использования
+                        div.blockSearch_selectItem
+                           input(type="checkbox" name="1")
+                           ="1"
+                           br
+                           input(type="checkbox" name="2")
+                           ="2"
+                     div.blockSearch_selectImg
+                        img(id="selectImgBottom" src="../images/svg/greyTriangleBottom.svg")
+                        img(id="selectImgTop" src="../images/svg/greyTriangleTop.svg")
+
+               div.blockSearch_classOfDanger.blockSearch_blocks
+                  p Класс опасности производства:
+                  div.blockSearch_select
+                     div.blockSearch_selectText
+                        p Выберите класс опасности производства
+                        div.blockSearch_selectItem
+                           input(type="checkbox" name="1")
+                           ="1"
+                           br
+                           input(type="checkbox" name="2")
+                           ="2"
+                     div.blockSearch_selectImg
+                        img(id="selectImgBottom" src="../images/svg/greyTriangleBottom.svg")
+                        img(id="selectImgTop" src="../images/svg/greyTriangleTop.svg")
+
+            div.blockSearch_raw
                div.blockSearch_square.blockSearch_blocks
                   p Площадь ЗУ:
                   div.blockSearch_quantityOfSquare.blockSearch_quantity
@@ -41,6 +69,28 @@ block content
                         p до
                         input(type="text" size="3")
                         p м.кв
+
+               div.blockSearch_gasification.blockSearch_blocks
+                  p Газоснабжение:
+                  div.blockSearch_quantityOfGas.blockSearch_quantity
+                     form(name="quantityOfGas" method="post" action="search.php")
+                        p от
+                        input(type="text" size="3")
+                        p до
+                        input(type="text" size="3")
+                        p м.куб./сутки
+
+               div.blockSearch_waterSupply.blockSearch_blocks
+                  p Водоснабжение:
+                  div.blockSearch_quantityOfWater.blockSearch_quantity
+                     form(name="quantityOfWater" method="post" action="search.php")
+                        p от
+                        input(type="text" size="3")
+                        p до
+                        input(type="text" size="3")
+                        p м.куб./сутки
+
+            div.blockSearch_raw
                //водоотведение
                div.blockSearch_severage.blockSearch_blocks
                   p Водоотведение:
@@ -51,35 +101,7 @@ block content
                         p до
                         input(type="text" size="3")
                         p м.куб./сутки
-            div.blockSearch_columnTwo.blockSearch_column
-               div.blockSearch_typeOfUse.blockSearch_blocks
-                  p Вид разрешенного использования:
-                  div.blockSearch_select
-                     div.blockSearch_selectText
-                        p Выберите вид разрешенного использования
-                     div.blockSearch_selectImg
-                        img(src="../images/svg/greyTriangleBottom.svg")
-                  div.blockSearch_selectItem
-                     input(type="checkbox" name="1")
-                     ="1"
-                     br
-                     input(type="checkbox" name="2")
-                     ="2"
-                     //select
-                     //   option Выберите вид разрешенного использовани
-                     //   option 1
-                     //   option 2
-                     //form
-                     //   input
-               div.blockSearch_gasification.blockSearch_blocks
-                  p Газоснабжение:
-                  div.blockSearch_quantityOfGas.blockSearch_quantity
-                     form(name="quantityOfGas" method="post" action="search.php")
-                        p от
-                        input(type="text" size="3")
-                        p до
-                        input(type="text" size="3")
-                        p м.куб./сутки
+
                div.blockSearch_heatSupply.blockSearch_blocks
                   p Теплоснабжение
                   div.blockSearch_quantityOfHeat.blockSearch_quantity
@@ -90,35 +112,6 @@ block content
                         input(type="text" size="3")
                         p Гкал/час
 
-            div.blockSearch_columnThree.blockSearch_column
-               div.blockSearch_classOfDanger.blockSearch_blocks
-                  p Класс опасности производства:
-                  div.blockSearch_select
-                     div.blockSearch_selectText
-                        p Выберите класс опасности производства
-                     div.blockSearch_selectImg
-                        img(src="../images/svg/greyTriangleBottom.svg")
-                  div.blockSearch_selectItem
-                     input(type="checkbox" name="1")
-                     ="1"
-                     br
-                     input(type="checkbox" name="2")
-                     ="2"
-                     //select
-                     //   option Выберите класс опасности производства
-                     //   option 1
-                     //   option 2
-                     //form
-                     //   input
-               div.blockSearch_waterSupply.blockSearch_blocks
-                  p Водоснабжение:
-                  div.blockSearch_quantityOfWater.blockSearch_quantity
-                     form(name="quantityOfWater" method="post" action="search.php")
-                        p от
-                        input(type="text" size="3")
-                        p до
-                        input(type="text" size="3")
-                        p м.куб./сутки
                div.blockSearch_electricitySupply.blockSearch_blocks
                   p Электроснабжение
                   div.blockSearch_quantityOfElectricity.blockSearch_quantity
@@ -132,31 +125,17 @@ block content
       div.content_blockMap
 
          div.content_map
-            //img(src="../images/gerb_spb.jpg")
+            //img(src="../images/gerb_spb.jpg" width="400px")
             canvas
-
-         //div.content_sidebarInformation
-         //   div.angleTop_comment.sidebar_comment
-         //      p Свернуть панель инструментов
-         //   div.industrialZonesBorders_comment.sidebar_comment
-         //      p Отображение границ промышленных зон
-         //   div.sections_comment.sidebar_comment
-         //      p Отображение земельных участков внутри границ промышленных зон
-         //   div.redactor_comment.sidebar_comment
-         //      p Редактирование информации о выбранном земельном участке
-         //   div.trash_comment.sidebar_comment
-         //      p Удаление выбранного объекта
-         //   div.lineChanging_comment.sidebar_comment
-         //      p Изменение котуров промышленных зон/земельных участков
 
          div.content_blockSidebar
             div.content_sidebar
                div.sidebar_upperButtons
                   div.sidebar_angleTopButton.sidebarButtons
                      img(src="../images/angleTop.gif")
+                     //img(src="../images/svg/angleBottom.svg")
                      div.angleTop_comment.sidebar_comment
                         p Свернуть панель инструментов
-                     img(src="../images/svg/angleBottom.svg")
                   div.sidebar_industrialZonesBordersButton.sidebarButtons
                      div.industrialZonesBorders_comment.sidebar_comment
                         p Отображение границ промышленных зон
@@ -177,14 +156,6 @@ block content
                      div.lineChanging_comment.sidebar_comment
                         p Изменение котуров промышленных зон/земельных участков
                      img(src="../images/svg/lineChanging.svg")
-                  //i(class="fa fa-chevron-up" aria-hidden="true")//стрелка вверх
-                  //i(class="fa fa-chevron-down" aria-hidden="true")// стрелка вниз
-                  //i(class="fa fa-map-marker" aria-hidden="true") // маркер
-
-
-                  //i(class="fa fa-trash-o" aria-hidden="true")//мусорка
-
-                  //i(class="fa fa-camera" aria-hidden="true")//камера
 
                div.sidebar_bottomButtons
 
@@ -198,6 +169,7 @@ block content
                div.information_objectInformation
                   div.information_objectInformationArrow
                      img(src="../images/svg/triangleBottom.svg")
+                     //img(src="../images/svg/triangleTop.svg")
                   div.information_objectInformationText
                      p Информация о найденных объектах
 

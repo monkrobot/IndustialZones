@@ -37,16 +37,20 @@
 .blockSearch_content
   width 85%
   margin 0 auto
-  display flex
-  justify-content center
+  //display flex
+  //justify-content center
 
-  .blockSearch_column
-    width 33%
+  .blockSearch_raw
+    display table
+    width 100%
 
   .blockSearch_blocks //.blockSearch_priorityArea, .blockSearch_square, .blockSearch_severage, .blockSearch_typeOfUse, .blockSearch_gasification, .blockSearch_heatSupply, .blockSearch_classOfDanger, .blockSearch_waterSupply, .blockSearch_electricitySupply
+    display table-cell
+    width 33%
     background-color rgba(1,1,1,0.05)
-    margin 4px 2px
-    padding 3%
+    //margin 4px 2px
+    border 2px solid #ffffff
+    padding 1%
 
   .blockSearch_quantity //.blockSearch_quantityOfSquare, .blockSearch_quantityOfSeverage, .blockSearch_quantityOfGas, .blockSearch_quantityOfHeat, .blockSearch_quantityOfWater, .blockSearch_quantityOfElectricity
     margin-top 2%
@@ -55,34 +59,48 @@
       display inline-block
 
   .blockSearch_select,.blockSearch_selectItem
-    width 75%
     background-color #ffffff
-    margin-top 2%
-    border 1px solid #000000
     padding-left 1%
+    border 1px solid #000000
+
 
   .blockSearch_select
+    width 75%
+    margin-top 2%
+    position relative
     cursor pointer
 
-  .blockSearch_selectItem123
-    opacity 0
+  .blockSearch_selectItem
+    position absolute
+    width 99%
+    top 120%
+    left -0.3%
+    display none
     box-shadow  0 0 7px rgba(0,0,0,0.5)
 
   .blockSearch_selectText
-    //position relative
     display inline-block
     width 90%
 
   .blockSearch_selectImg
     display inline-block
-    width 8%
+    width 7%
     text-align right
+    img
+      vertical-align middle
+      //padding-bottom 15%
 
-blockSearch_selectText123:hover+.blockSearch_selectItem123 {
-  opacity 1
-}
-  //z-index 5
-  //top 100px
+  #selectImgTop
+    display none
+
+  .blockSearch_select:hover .blockSearch_selectItem
+    display block
+
+  .blockSearch_select:hover #selectImgTop
+    display inline-block
+
+  .blockSearch_select:hover #selectImgBottom
+    display none
 
 //Content_blockMap
 .content_blockMap
@@ -99,22 +117,6 @@ blockSearch_selectText123:hover+.blockSearch_selectItem123 {
   canvas
     height 100%
     width 100%
-
-//.content_sidebarInformation
-//  position absolute
-//  z-index 3
-//  top 9%
-//  left 8%
-//  .sidebar_comment
-//    width 100%
-//    background-color #ffffff
-//    box-shadow  0 0 7px rgba(0,0,0,0.5)
-//    margin-bottom 10%
-//
-//    p
-//      padding 0.5%
-//      font-size 0.9em
-//
 
 //.content_blockSidebar
 .content_blockSidebar
@@ -137,9 +139,11 @@ blockSearch_selectText123:hover+.blockSearch_selectItem123 {
       background-color #ffffff
       //z-index 2
       text-align center
+      cursor pointer
 
       .sidebar_comment
         //z-index 4
+        display none
         position absolute
         left 7%
         background-color #ffffff
@@ -151,15 +155,18 @@ blockSearch_selectText123:hover+.blockSearch_selectItem123 {
       .angleTop_comment
         top 5%
       .industrialZonesBorders_comment
-        top 18%
+        top 22%
       .sections_comment
-        top 33%
+        top 39%
       .redactor_comment
-        top 47%
+        top 55%
       .trash_comment
-        top 62%
+        top 72%
       .lineChanging_comment
-        top 76%
+        top 88%
+
+  .sidebarButtons:hover .sidebar_comment
+    display block
 
   //.content_information
   //
@@ -176,6 +183,8 @@ blockSearch_selectText123:hover+.blockSearch_selectItem123 {
   .information_buttonClose
     text-align right
     padding 0.2% 0.5% 0 0
+    img
+      cursor pointer
 
   .information_wrapperObjectInformation
     width 25%
@@ -191,9 +200,11 @@ blockSearch_selectText123:hover+.blockSearch_selectItem123 {
     .information_objectInformationArrow
       display inline-block
       width 5%
+      cursor pointer
     .information_objectInformationText
       display inline-block
       width 93%
+      cursor pointer
 
   .information_list
     background-color #ffffff
@@ -257,6 +268,7 @@ blockSearch_selectText123:hover+.blockSearch_selectItem123 {
   color #ffffff
   background-color #00bbfa
   border-radius 8px
+  cursor pointer
   p
     margin 3%
 
