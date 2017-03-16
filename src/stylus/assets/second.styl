@@ -73,10 +73,13 @@
   .blockSearch_selectItem
     position absolute
     width 99%
-    top 120%
+    top 105%
     left -0.3%
     display none
     box-shadow  0 0 7px rgba(0,0,0,0.5)
+
+    input
+      color #29ABE2
 
   .blockSearch_selectText
     display inline-block
@@ -133,10 +136,18 @@
     //z-index 2
     width 70px
     margin 0 3%
-    box-shadow  0 0 7px rgba(0,0,0,0.5)
+
+
+    .sidebar_upperButtons, .sidebar_bottomButtons
+      background-color #ffffff
+      box-shadow  0 0 7px rgba(0,0,0,0.5)
+      padding-top 6%
+
+    .sidebar_bottomButtons
+      margin-top 25%
 
     .sidebarButtons
-      background-color #ffffff
+      //background-color #ffffff
       //z-index 2
       text-align center
       cursor pointer
@@ -155,15 +166,19 @@
       .angleTop_comment
         top 5%
       .industrialZonesBorders_comment
-        top 22%
+        top 16%
       .sections_comment
-        top 39%
+        top 28%
       .redactor_comment
-        top 55%
+        top 40%
       .trash_comment
-        top 72%
+        top 53%
       .lineChanging_comment
-        top 88%
+        top 64%
+      .foto_comment
+        top 76%
+      .legend_comment
+        top 92%
 
   .sidebarButtons:hover .sidebar_comment
     display block
@@ -222,7 +237,7 @@
         text-align center
         background-color #00bbfa
         color #ffffff
-        border-radius 40px
+        border-radius 100% //40px
 
     .information_listContent
       display inline-block

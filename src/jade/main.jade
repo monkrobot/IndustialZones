@@ -25,14 +25,14 @@ block content
                         div.blockRegistration_form
                             form(name="registration" method="post" action="registration.php")
                                 div.blockRegistration_inputPerson.blockRegistration_commonClass
-                                    input(type="radio" name="whoAreYou" value="person")
-                                    = 'Физическое лицо'
+                                    input( class="pushInput" type="radio" name="whoAreYou" value="person")
+                                    label(for="pushInput") Физическое лицо
                                 div.blockRegistration_inputLegalEntity.blockRegistration_commonClass
-                                    input(type="radio" name="whoAreYou" value="legalEntity")
-                                    = 'Юридическое лицо'
+                                    input(class="pushInput" type="radio" name="whoAreYou" value="legalEntity")
+                                    label(for="pushInput") Юридическое лицо
                                 div.blockRegistration_inputStateExecuter.blockRegistration_commonClass
-                                    input(type="radio" name="whoAreYou" value="stateExecuter")
-                                    = 'ИОГВ'
+                                    input(class="pushInput" type="radio" name="whoAreYou" value="stateExecuter")
+                                    label(for="pushInput") ИОГВ
 
                         div.blockRegistration_person
                             //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
@@ -54,11 +54,11 @@ block content
                             div.blockRegistration_document
                                 form(name="document" method="post" action="registration.php")
                                     div.blockRegistration_inputPassport.blockRegistration_commonClass
-                                        input(type="radio" name="document" value="passport")
-                                        = 'Паспортные данные'
+                                        input(class="pushInput" type="radio" name="document" value="passport")
+                                        label(for="pushInput") Паспортные данные
                                     div.blockRegistration_inputInn.blockRegistration_commonClass
-                                        input(type="radio" name="document" value="inn")
-                                        = 'ИНН'
+                                        input(class="pushInput" type="radio" name="document" value="inn")
+                                        label(for="pushInput") ИНН
                             div.blockRegistration_documentData
                                 div.blockRegistration_passport
                                     //.hide-element-lg.hide-element-md.hide-element-sm.hide-element-xs
